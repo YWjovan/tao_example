@@ -3,10 +3,6 @@ class LoginTopMenu extends React.Component{
         super(props);
     }
 
-    handleClick(){
-        alert("hi " + (this.props.name));
-    }
-
     componentDidMount() {
         var me = this;
 
@@ -25,8 +21,13 @@ class LoginTopMenu extends React.Component{
             spinner : me
         });
     }
+
     componentDidUpdate(prevProps, prevState) {
         var me = this;
+    }
+
+    handleClick(){
+        alert("hi " + (this.props.name));
     }
 
     render(){
