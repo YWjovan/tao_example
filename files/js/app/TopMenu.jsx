@@ -36,10 +36,7 @@ class TopMenu extends React.Component {
 		<p className="p-2">
 			{this.state.list.map(function(item, i){
 				return (<span className="mr-3">
-						{/*<a href="javascript:void(0);" onClick={me.handleClick.bind(me, item)}>*/}
-						{/*{item.datname}*/}
-						{/*</a>*/}
-						<a href="javascript:void(0);">
+						<a href="javascript:void(0);" onClick={me.handleClick.bind(me, item)}>
 						{item.datname}
 						</a>
 					</span>)
