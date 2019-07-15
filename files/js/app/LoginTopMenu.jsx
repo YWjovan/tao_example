@@ -1,6 +1,7 @@
 class LoginTopMenu extends React.Component{
     constructor(props){
         super(props);
+        this.state = ["logo", "solution", "sign"];
     }
 
     componentDidMount() {
@@ -27,16 +28,15 @@ class LoginTopMenu extends React.Component{
     }
 
     handleClick(item){
-        alert("hi " + (item.name));
+        alert("hi " + (item));
     }
 
     render(){
         var me = this;
         return(
-            <div>
-                <span name = "Logo"><a href = "javascript:void(0)">Logo</a></span>
-                <span name = "Solution"><a href = "javascript:void(0)">Tao Solution</a></span>
-                <span name = "Sign"><a href = "javascript:void(0)">Sign Up</a></span>
+            <div className="border border-success alert-success rounded  m-0 mt-3 mb-2 p-2">
+                {this.state.map(item =>
+                    <span><a href = "javascript:void(0);" onClick={this.handleClick(bind(me, item))}>{item}</a></span>)}
             </div>);
     }
 }
