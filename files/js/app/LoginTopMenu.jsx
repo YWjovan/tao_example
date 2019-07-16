@@ -36,7 +36,7 @@ class LoginTopMenu extends React.Component{
         return(
             <div className="border border-success alert-success rounded  m-0 mt-3 mb-2 p-2">
                 {this.state.map(item =>
-                    <span><a href = "javascript:void(0);" onClick={this.handleClick(bind(me, item))}>{item}</a></span>)}
+                    <span><a href = "javascript:void(0);" onClick={this.handleClick.bind(me, item)}>{item}</a></span>)}
             </div>);
     }
 }
