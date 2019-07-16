@@ -35,8 +35,8 @@ class LoginTopMenu extends React.Component{
         var me = this;
         return(
             <div className="border border-success alert-success rounded  m-0 mt-3 mb-2 p-2">
-                {this.state.list.tag.map(item =>(
-                    <span><a href = "javascript:void(0);">{item}</a></span>))}
+                {this.state.tag.map(item =>(
+                    <span className = "mr-3"><a href = "javascript:void(0);">{item}</a></span>))}
             </div>);
     }
 }
