@@ -1,7 +1,7 @@
 class LoginTopMenu extends React.Component{
     constructor(props){
         super(props);
-        this.state = ["logo", "solution", "sign"];
+        this.state = {list:[], tag: ["logo", "solution", "sign"]};
     }
 
     componentDidMount() {
@@ -35,7 +35,7 @@ class LoginTopMenu extends React.Component{
         var me = this;
         return(
             <div className="border border-success alert-success rounded  m-0 mt-3 mb-2 p-2">
-                {this.state.map(item =>(
+                {this.state.list.tag.map(item =>(
                     <span><a href = "javascript:void(0);">{item}</a></span>))}
             </div>);
     }
