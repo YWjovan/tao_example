@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee7068e-837d-43f6-b582-e0967ce575e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api/testROOT.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/testROOT.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/js/app/TAORoot.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/TAORoot.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/js/app/TaoController.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/TaoController.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/app/TaoContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/TaoContent.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,20 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/testROOT.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/js/app/TAOindex.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+            <state relative-caret-position="60">
+              <caret line="4" column="85" lean-forward="true" selection-start-line="4" selection-start-column="85" selection-end-line="4" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -80,9 +69,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/files/js/app/TaoContent.jsx">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -101,6 +94,7 @@
         <option value="$PROJECT_DIR$/files/js/app/TaoController.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/TAORoot.jsx" />
         <option value="$PROJECT_DIR$/api/testROOT.js" />
+        <option value="$PROJECT_DIR$/files/js/app/TaoContent.jsx" />
       </list>
     </option>
   </component>
@@ -188,12 +182,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563223178019</updated>
-      <workItem from="1563223179248" duration="7575000" />
+      <workItem from="1563223179248" duration="7905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7575000" />
+    <option name="totallyTimeSpent" value="7905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
@@ -241,9 +235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/js/app/TaoContent.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/files/js/socket.io/1.7.3/socket.io.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -268,13 +259,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/js/app/TAOindex.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/files/js/app/TopMenu.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -296,6 +280,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/testROOT.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/files/js/app/TaoController.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -303,10 +294,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/testROOT.js">
+    <entry file="file://$PROJECT_DIR$/files/js/app/TAOindex.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="60">
+          <caret line="4" column="85" lean-forward="true" selection-start-line="4" selection-start-column="85" selection-end-line="4" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/js/app/TaoContent.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
         </state>
       </provider>
     </entry>
