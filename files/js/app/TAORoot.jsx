@@ -7,9 +7,11 @@ class TAORoot extends React.Component {
 		this.sno = 0;
 		this.state = {_spinner : {}};
 	}
+
 	componentDidMount() {
 		var me = this; 
 	}
+
 	dataEngine(cfg) {
 		var me = this;
 		if (cfg.spinner !== false) {
@@ -35,6 +37,7 @@ class TAORoot extends React.Component {
 			}
 		});
 	}
+
 	componentDidUpdate(prevProps, prevState) {
 		var me = this;
 	}

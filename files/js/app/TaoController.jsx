@@ -2,26 +2,31 @@
     ReactDOM.TAO = {
         list    : {},
 
+		//id
+		//obj -> tag
+		//DOM
         load : function(id, obj, pobj) {
-		obj.props._TAOID = id;
-		if (!this.list.Root && id !== 'Root') {
-			this.loadRoot();
-		}
-		if (pobj) {
-			if (id !== 'Root') {
-				obj.type.prototype.preRender = obj.type.prototype.render;
-				obj.type.prototype.render = function() {
-					var me = this;
-					return <span>{ReactDOM.TAO.list.Root.showSpinner(me)}{me.preRender()}</span>
-				}
+			obj.props._TAOID = id;
+			if (!this.list.Root && id !== 'Root') {
+				this.loadRoot();
 			}
-			this.list[id] = ReactDOM.render(obj, pobj);
-		}
+			if (pobj) {
+				if (id !== 'Root') {
+					obj.type.prototype.preRender = obj.type.prototype.render;
+					obj.type.prototype.render = function() {
+						var me = this;
+						return <span>{ReactDOM.TAO.list.Root.showSpinner(me)}{me.preRender()}</span>
+					}
+				}
+				this.list[id] = ReactDOM.render(obj, pobj);
+			}
         },
-	append  : function(id, obj, pobj) {
-	    var newObj = pobj.appendChild( document.createElement( 'div' ));
-            this.load(id, obj, newObj);
+
+		append  : function(id, obj, pobj) {
+			var newObj = pobj.appendChild( document.createElement( 'div' ));
+				this.load(id, obj, newObj);
         },
+
         setState : function(id, data) {
             if (id === '*') {
                 for (o in this.list) {
@@ -35,16 +40,20 @@
                 }
             }
         },
-	loadRoot : function() {
-		this.append('Root', <TAORoot param={{}} />, document.body);
-	},
-	dataEngine : function(cfg) {
-		this.list.Root.dataEngine(cfg);
-	},
-	popup : function(setting) {
+
+		loadRoot : function() {
+			this.append('Root', <TAORoot param={{}} />, document.body);
+		},
+
+		dataEngine : function(cfg) {
+			this.list.Root.dataEngine(cfg);
+		},
+
+		popup : function(setting) {
     		this.list.Root.popup(setting)
     	},
-	closePopup : function() {
+
+		closePopup : function() {
     		this.list.Root.closePopup();
     	}
     }
