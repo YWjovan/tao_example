@@ -28,7 +28,10 @@ class LoginTopMenu extends React.Component{
     }
 
     handleClick(item){
-        if(item === "logo") this.props.history.push('/app/TAOindex');
+        if(item === "logo") {
+            //this.props.history.push('/app/TAOindex');
+            alert(item);
+        }
         //alert("hi " + (item));
     }
 
