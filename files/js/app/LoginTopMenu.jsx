@@ -1,7 +1,15 @@
 class LoginTopMenu extends React.Component{
     constructor(props){
         super(props);
-        this.state = {list:[]};
+        this.state = {};
+    }
+
+    componentDidMount() {
+        var me = this;
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        var me = this;
     }
 
     // componentDidMount() {
@@ -60,6 +68,7 @@ class LoginTopMenu extends React.Component{
                 {/*    <option onClick={this.translateToEnglish}>English</option>*/}
                 {/*    <option onClick={this.translateToChinese}>Chinese</option>*/}
                 {/*</select>*/}
-            </div>);
+            </div>
+        );
     }
 }
