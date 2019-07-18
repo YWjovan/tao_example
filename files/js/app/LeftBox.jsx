@@ -4,6 +4,7 @@ class LeftBox extends React.Component {
 	this.props = props;
 	this.state = {list : []};
   }
+
   componentDidMount() {
 	var me = this;  
 	ReactDOM.TAO.dataEngine({
@@ -19,12 +20,13 @@ class LeftBox extends React.Component {
 		     console.log('err');
 	     }, 
 	     spinner : me
-	  });   
-	  
+	  });
   }
+
   componentDidUpdate(prevProps, prevState) {
 	var me = this;
   }
+
   render() {
     var me = this;
     return (
