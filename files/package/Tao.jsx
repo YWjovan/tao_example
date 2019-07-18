@@ -14,6 +14,6 @@
 		"/js/app/LeftBox.jsx",
 		"/js/app/TaoContent.jsx",
 		"/js/app/TAOindex.jsx",
-		"/js/app/LoginTopMenu.jsx"
+		"/js/app/LoginTopMenu.jsx",
 	]
 }

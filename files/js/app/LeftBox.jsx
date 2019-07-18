@@ -33,10 +33,10 @@ class LeftBox extends React.Component {
       <div className="border border-warning alert-warning rounded m-0 p-2">
 	ALL TABLES :
         <ul>
-          {/*{this.state.list.map(function(item, i){*/}
-          {/*   return (<li>{item.tablename}</li>)*/}
-          {/* })}*/}
-			{this.state.list.map(item => (<li>{item.tablename}</li>))}
+          {this.state.list.map(function(item, i){
+             return (<li>{item.tablename}</li>)
+           })}
+			{/*{this.state.list.map(item => (<li>{item.tablename}</li>))}*/}
         </ul>
       </div>
     );
