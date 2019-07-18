@@ -27,20 +27,38 @@ class LoginTopMenu extends React.Component{
         var me = this;
     }
 
-    handleClick(item){
-        if(item === "logo") {
-            //this.props.history.push('/app/TAOindex');
-            alert(item);
-        }
-        //alert("hi " + (item));
+    logoClick = () => {
+
+    }
+
+    taoSolutionClick = () => {
+
+    }
+
+    signUpClick = () => {
+
+    }
+
+    translateToEnglish = () => {
+
+    }
+
+    translateToChinese = () => {
+
     }
 
     render(){
         var me = this;
         return(
             <div className="border border-success alert-success rounded  m-0 mt-3 mb-2 p-2">
-                {this.state.tag.map(item =>(
-                    <span className = "mr-3"><a href = "javascript:void(0);" onClick={() => {this.handleClick(item)}}>{item}</a></span>))}
+                <img onClick={this.logoClick} value = "logo"/>
+                <span><a href = "javascript:(0);" onClick={this.taoSolutionClick}>Tao Solution</a></span>
+                <img value = "icon" />
+                <span><a href = "javascript:(0);" onClick={this.signUpClick}>Sign Up</a></span>
+                <select>
+                    <option onClick={this.translateToEnglish}>English</option>
+                    <option onClick={this.translateToChinese}>Chinese</option>
+                </select>
             </div>);
     }
 }
