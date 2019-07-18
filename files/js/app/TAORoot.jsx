@@ -41,11 +41,13 @@ class TAORoot extends React.Component {
 	componentDidUpdate(prevProps, prevState) {
 		var me = this;
 	}
+
 	getSno() {
 		var me = this;
 		me.sno = (!me.sno || me.sno > 1000000) ? 1 : (me.sno + 1);
 		return 'SNO-' + me.sno + '-' + new Date().getTime();
 	}
+
 	popup(setting) {
 		var me = this;
 		me.popupSetting = setting;
@@ -54,6 +56,7 @@ class TAORoot extends React.Component {
 			me.animationIn();
 		});
 	}
+
 	closePopup() {
 		var me = this;
 		me.popupSetting = null;
@@ -61,6 +64,7 @@ class TAORoot extends React.Component {
 			me.setState({_popup : false})
 		});
 	}
+
 	animationIn() {
 		// 'puff', 'clip', 'explode', 'fold', 'slide'
 		// var Effect_a = ['puff', 'clip', 'fold', 'slide', 'drop'],
@@ -70,6 +74,7 @@ class TAORoot extends React.Component {
 		    direction = direction_a[Math.floor(Math.random() * direction_a.length)];		
 		$('.overlay_popup_page').hide().show( Effect,  600 )
 	}
+
 	animationOut(cbk) {
 		// 'puff', 'clip', 'explode', 'fold', 'slide'
 		// var Effect_a = ['puff', 'clip', 'fold', 'slide', 'drop'],
@@ -84,6 +89,7 @@ class TAORoot extends React.Component {
 				cbk();
 			});
 	}
+
 	showPopup() {
 		var me = this;
 		var v = me.popupSetting;
@@ -112,7 +118,8 @@ class TAORoot extends React.Component {
 				</div>				
 			</span>
 			</span>) : (<span></span>)		
-	}		
+	}
+
 	showSpinner(spinner) {
 		var me = this;
 		if (!spinner) {
@@ -125,6 +132,7 @@ class TAORoot extends React.Component {
 				</span>) : (<span></span>)
 		}
 	}
+
 	spinOn (setting) {
 		var me = this, tm = new Date().getTime();
 		if (!setting) var setting = {};
@@ -144,10 +152,12 @@ class TAORoot extends React.Component {
 		}
 		return code;
 	}
+
 	spinOff(code) {
 		var me = this;
 		delete me.spinPool[code];
 	}
+
 	isEquivalent(a, b) {
 	    var aP = Object.keys(a), bP = Object.keys(b);
 	    if (aP.length != bP.length) { return false; }
@@ -157,6 +167,7 @@ class TAORoot extends React.Component {
 	    }
 	    return true;
 	}
+
 	scanSpin() {
 		var me = this;
 		return function() {
@@ -186,6 +197,7 @@ class TAORoot extends React.Component {
 			}
 		}
 	}
+
 	render() {
 		var me = this;
 		return (<span>{me.showSpinner()} {me.showPopup()}</span>);
