@@ -1,7 +1,7 @@
 class LoginTopMenu extends React.Component{
     constructor(props){
         super(props);
-        this.state = {list:[], tag: ["logo", "solution", "sign"]};
+        this.state = {list:[], tag: ["logo", "solution", "sign", "language"]};
     }
 
     componentDidMount() {
