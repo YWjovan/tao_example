@@ -51,9 +51,9 @@ class LoginTopMenu extends React.Component{
         var me = this;
         return(
             <div className="border border-success alert-success rounded  m-0 mt-3 mb-2 p-2">
-                <img onClick={this.logoClick} value = "logo"/>
+                {/*<img onClick={this.logoClick} value = "logo"/>*/}
                 <span><a href = "javascript:void(0);" onClick={this.taoSolutionClick}>Tao Solution</a></span>
-                <img value = "icon" />
+                {/*<img value = "icon" />*/}
                 <span><a href = "javascript:void(0);" onClick={this.signUpClick}>Sign Up</a></span>
                 <select>
                     <option onClick={this.translateToEnglish}>English</option>
