@@ -27,25 +27,25 @@ class LoginTopMenu extends React.Component{
         var me = this;
     }
 
-    logoClick = () => {
-
-    }
-
-    taoSolutionClick = () => {
-
-    }
-
-    signUpClick = () => {
-
-    }
-
-    translateToEnglish = () => {
-
-    }
-
-    translateToChinese = () => {
-
-    }
+    // logoClick = () => {
+    //
+    // }
+    //
+    // taoSolutionClick = () => {
+    //
+    // }
+    //
+    // signUpClick = () => {
+    //
+    // }
+    //
+    // translateToEnglish = () => {
+    //
+    // }
+    //
+    // translateToChinese = () => {
+    //
+    // }
 
     render(){
         var me = this;
