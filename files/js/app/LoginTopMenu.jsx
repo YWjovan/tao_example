@@ -48,7 +48,9 @@ class LoginTopMenu extends React.Component{
     }
 
     languageChange(me){
-        console.log(me.target.value);
+        var changeLanguage = me.target.value;
+        console.log(changeLanguage);
+        this.setState({language: changeLanguage});
     }
 
     render(){
