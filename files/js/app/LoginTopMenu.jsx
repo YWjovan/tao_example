@@ -1,7 +1,7 @@
 class LoginTopMenu extends React.Component{
     constructor(props){
         super(props);
-        this.state = {list: []};
+        this.state = {list: [], language: "English"};
     }
 
     componentDidMount() {
@@ -47,6 +47,10 @@ class LoginTopMenu extends React.Component{
         console.log("chinese click");
     }
 
+    languageChange(me){
+        console.log(me.target.value);
+    }
+
     render(){
         var me = this;
         return (
@@ -55,9 +59,9 @@ class LoginTopMenu extends React.Component{
                 <span><a href = "javascript:void(0);" onClick={this.taoSolutionClick}>Tao Solution</a></span>
                 <img alt = "icon" />
                 <span><a href = "javascript:void(0);" onClick={this.signUpClick}>Sign Up</a></span>
-                <select>
-                    <option onClick={this.translateToEnglish}>English</option>
-                    <option onClick={this.translateToChinese}>Chinese</option>
+                <select onChange={this.languageChange.bind(this)}>
+                    <option value = "English">English</option>
+                    <option value = "Chinese">Chinese</option>
                 </select>
             </div>
         );
