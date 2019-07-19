@@ -27,39 +27,38 @@ class LoginTopMenu extends React.Component{
         var me = this;
     }
 
-    // logoClick = () => {
-    //
-    // }
-    //
-    // taoSolutionClick = () => {
-    //
-    // }
-    //
-    // signUpClick = () => {
-    //
-    // }
-    //
-    // translateToEnglish = () => {
-    //
-    // }
-    //
-    // translateToChinese = () => {
-    //
-    // }
+    logoClick(){
+
+    }
+
+    taoSolutionClick(){
+
+    }
+
+    signUpClick(){
+
+    }
+
+    translateToEnglish(){
+
+    }
+
+    translateToChinese(){
+
+    }
 
     render(){
         var me = this;
         return (
             <div className="border border-success alert-success rounded  m-0 mt-3 mb-2 p-2">
-                Hi!
-                {/*/!*<img onClick={this.logoClick} value = "logo"/>*!/*/}
-                {/*<span><a href = "javascript:void(0);" onClick={this.taoSolutionClick}>Tao Solution</a></span>*/}
-                {/*/!*<img value = "icon" />*!/*/}
-                {/*<span><a href = "javascript:void(0);" onClick={this.signUpClick}>Sign Up</a></span>*/}
-                {/*<select>*/}
-                {/*    <option onClick={this.translateToEnglish}>English</option>*/}
-                {/*    <option onClick={this.translateToChinese}>Chinese</option>*/}
-                {/*</select>*/}
+                <img onClick={this.logoClick} value = "logo"/>
+                <span><a href = "javascript:void(0);" onClick={this.taoSolutionClick}>Tao Solution</a></span>
+                <img value = "icon" />
+                <span><a href = "javascript:void(0);" onClick={this.signUpClick}>Sign Up</a></span>
+                <select>
+                    <option onClick={this.translateToEnglish}>English</option>
+                    <option onClick={this.translateToChinese}>Chinese</option>
+                </select>
             </div>
         );
     }
