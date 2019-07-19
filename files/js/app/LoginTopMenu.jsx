@@ -28,23 +28,23 @@ class LoginTopMenu extends React.Component{
     }
 
     logoClick(){
-
+        console.log("logo click");
     }
 
     taoSolutionClick(){
-
+        console.log("tao-solution click");
     }
 
     signUpClick(){
-
+        console.log("sign-up click");
     }
 
     translateToEnglish(){
-
+        console.log("english click");
     }
 
     translateToChinese(){
-
+        console.log("chinese click");
     }
 
     render(){
