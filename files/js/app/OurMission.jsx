@@ -1,4 +1,5 @@
-class OurMission extends React.component{
+class OurMission extends React.Component{
+
     render() {
         return (
             <div>
