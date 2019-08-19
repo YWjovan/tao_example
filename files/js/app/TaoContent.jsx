@@ -18,6 +18,7 @@ class TaoContent extends React.Component {
       <div className="border border-secondary alert-secondary rounded  m-0 p-2">
           <h3>Tao Content</h3>
           {(this.state._TAOstate) ? this.state._TAOstate.hello : '！！！'}
+          <OurMission></OurMission>
       </div>
     );
   }
