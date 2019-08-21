@@ -15,6 +15,8 @@
 		"/js/app/TaoContent.jsx",
 		"/js/app/TAOindex.jsx",
 		"/js/app/LoginTopMenu.jsx",
-		"/js/app/OurMission.jsx"
+		"/js/app/OurMission.jsx",
+		"js/app/Footer.jsx",
+		"js/app/LoginMenu.jsx"
 	]
 }
