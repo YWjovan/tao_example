@@ -1,6 +1,5 @@
 {
     "filelist": [
-        "/js/json2/json2.min.js",
         "/js/jquery/3.3.1/jquery.min.js",
         "/js/jqueryui/1.12.1/jquery-ui.min.js",
         "/js/react/react.min.js",
