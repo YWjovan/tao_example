@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee7068e-837d-43f6-b582-e0967ce575e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/files/js/app/FeatureList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/js/app/FeatureItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/FeatureItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/app/TAOindex.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/TAOindex.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/package/Tao.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/package/Tao.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            <state relative-caret-position="344">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/files/js/app/FeatureList.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -70,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/files/package/Tao.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -100,10 +111,11 @@
         <option value="$PROJECT_DIR$/files/js/app/OurMission.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/featureItem.jsx" />
         <option value="$PROJECT_DIR$/files/package/yw.jsx" />
-        <option value="$PROJECT_DIR$/files/package/Tao.jsx" />
-        <option value="$PROJECT_DIR$/files/js/app/TAOindex.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/FeatureItem.jsx" />
+        <option value="$PROJECT_DIR$/files/js/app/FeatureList.jsx" />
+        <option value="$PROJECT_DIR$/files/js/app/TAOindex.jsx" />
         <option value="$PROJECT_DIR$/files/index.html" />
+        <option value="$PROJECT_DIR$/files/package/Tao.jsx" />
       </list>
     </option>
   </component>
@@ -225,12 +237,12 @@
       <workItem from="1566517821795" duration="37000" />
       <workItem from="1566517879964" duration="20000" />
       <workItem from="1566517973875" duration="40000" />
-      <workItem from="1566518034277" duration="1349000" />
+      <workItem from="1566518034277" duration="1579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26658000" />
+    <option name="totallyTimeSpent" value="26888000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -434,10 +446,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/package/Tao.jsx">
+    <entry file="file://$PROJECT_DIR$/files/js/app/FeatureItem.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -448,17 +460,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/js/app/FeatureItem.jsx">
+    <entry file="file://$PROJECT_DIR$/files/js/app/FeatureList.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/files/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        <state relative-caret-position="344">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/package/Tao.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
         </state>
       </provider>
     </entry>

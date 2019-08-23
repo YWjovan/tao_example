@@ -18,6 +18,7 @@
 		"/js/app/OurMission.jsx",
 		"/js/app/Footer.jsx",
 		"/js/app/LoginMenu.jsx",
-		"/js/app/FeatureItem.jsx"
+		"/js/app/FeatureItem.jsx",
+		"/js/app/FeatureList.jsx"
 	]
 }
