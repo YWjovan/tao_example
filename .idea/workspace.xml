@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee7068e-837d-43f6-b582-e0967ce575e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/files/js/app/FeatureItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/FeatureItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/js/app/FeatureList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/FeatureList.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/files/js/app/FeatureList.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -112,8 +111,8 @@
         <option value="$PROJECT_DIR$/files/js/app/OurMission.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/Footer.jsx" />
         <option value="$PROJECT_DIR$/files/index.html" />
-        <option value="$PROJECT_DIR$/files/js/app/FeatureList.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/FeatureItem.jsx" />
+        <option value="$PROJECT_DIR$/files/js/app/FeatureList.jsx" />
       </list>
     </option>
   </component>
@@ -235,12 +234,12 @@
       <workItem from="1566517821795" duration="37000" />
       <workItem from="1566517879964" duration="20000" />
       <workItem from="1566517973875" duration="40000" />
-      <workItem from="1566518034277" duration="2860000" />
+      <workItem from="1566518034277" duration="3013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28169000" />
+    <option name="totallyTimeSpent" value="28322000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -474,8 +473,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/files/js/app/FeatureList.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="105">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
