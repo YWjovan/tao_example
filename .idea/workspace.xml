@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee7068e-837d-43f6-b582-e0967ce575e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/files/js/app/FeatureItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/FeatureItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/js/app/FeatureList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/FeatureList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/images/business1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/images/business2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/images/business3.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -111,11 +112,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="348" />
     <option name="y" value="23" />
-    <option name="width" value="764" />
-    <option name="height" value="823" />
+    <option name="width" value="1092" />
+    <option name="height" value="821" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -139,12 +140,6 @@
               <item name="tao_example" type="b2602c69:ProjectViewProjectNode" />
               <item name="tao_example" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tao_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tao_example" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tao_example" type="b2602c69:ProjectViewProjectNode" />
@@ -239,12 +234,12 @@
       <workItem from="1566523075719" duration="7000" />
       <workItem from="1566523092535" duration="5000" />
       <workItem from="1566523106146" duration="12000" />
-      <workItem from="1566523144416" duration="499000" />
+      <workItem from="1566523144416" duration="730000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29516000" />
+    <option name="totallyTimeSpent" value="29747000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -256,10 +251,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="821" extended-state="6" />
-    <editor active="true" />
+    <frame x="348" y="23" width="1092" height="821" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14094433" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18674137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
