@@ -6,9 +6,9 @@ class FeatureList extends React.Component{
     render() {
         return (
             <div>
-                <featureItem name="yw" />
-                <featureItem name="eric" />
-                <featureItem name="oliver" />
+                <FeatureItem name="yw" />
+                <FeatureItem name="eric" />
+                <FeatureItem name="oliver" />
             </div>
         );
     }
