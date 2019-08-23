@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee7068e-837d-43f6-b582-e0967ce575e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/files/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/js/app/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/js/app/OurMission.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/OurMission.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/files/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+            <state relative-caret-position="344">
+              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -56,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/files/js/app/FeatureItem.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -70,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/js/app/Footer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+            <state relative-caret-position="120">
+              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -109,11 +109,11 @@
         <option value="$PROJECT_DIR$/files/package/yw.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/TAOindex.jsx" />
         <option value="$PROJECT_DIR$/files/package/Tao.jsx" />
-        <option value="$PROJECT_DIR$/files/index.html" />
         <option value="$PROJECT_DIR$/files/js/app/FeatureItem.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/FeatureList.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/OurMission.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/Footer.jsx" />
+        <option value="$PROJECT_DIR$/files/index.html" />
       </list>
     </option>
   </component>
@@ -235,12 +235,12 @@
       <workItem from="1566517821795" duration="37000" />
       <workItem from="1566517879964" duration="20000" />
       <workItem from="1566517973875" duration="40000" />
-      <workItem from="1566518034277" duration="2037000" />
+      <workItem from="1566518034277" duration="2163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27346000" />
+    <option name="totallyTimeSpent" value="27472000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,24 +444,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/index.html">
+    <entry file="file://$PROJECT_DIR$/files/js/app/OurMission.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        <state relative-caret-position="135">
+          <caret line="9" column="725" selection-start-line="9" selection-start-column="725" selection-end-line="9" selection-end-column="725" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/js/app/Footer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/files/js/app/FeatureItem.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/js/app/OurMission.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="725" selection-start-line="9" selection-start-column="725" selection-end-line="9" selection-end-column="725" />
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -472,10 +472,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/js/app/Footer.jsx">
+    <entry file="file://$PROJECT_DIR$/files/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="344">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
         </state>
       </provider>
     </entry>

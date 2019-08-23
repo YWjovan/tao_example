@@ -7,7 +7,6 @@ class Footer extends React.Component{
         return (
             <div>
                 <h1>This is footer!!!!</h1>
-                <FeatureItem name="wy" />
             </div>
         );
     }
