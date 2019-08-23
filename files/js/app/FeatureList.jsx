@@ -1,11 +1,17 @@
 class FeatureList extends React.Component{
     constructor(props){
         super(props);
-        var items= [];
-        items.push({
-            name: "yw",
-            tag: "123"
-        });
+        var names = ["Inspiring Fresh Ideas", "Promoting Innovation", "Building Global Network"];
+        var tags = [".com creates an online business ecosystem to help entrepreneurs around the globe produce new ideas.",
+                    ".com is also an innovative platform for promoting and sharing of new technologies, innovations and patent technologies.",
+                    "TaoBase.com is designed for SMB owners to build a business network locally and globally -- both at the same time."];
+        var items = [];
+        for(var i = 0; i < names.length; i ++){
+            items.push({
+                name: names[i],
+                tag: tags[i]
+            });
+        }
         this.state = {items};
     }
 
