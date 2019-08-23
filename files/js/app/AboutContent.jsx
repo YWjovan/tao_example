@@ -7,7 +7,7 @@ class AboutContent extends React.Component{
         return (
             <div>
                 {this.props.contents.map((item, index) => {
-                    return (<p>item</p>);
+                    return (<p>{item}</p>);
                 })}
             </div>
         );
