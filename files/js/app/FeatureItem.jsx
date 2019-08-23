@@ -7,7 +7,7 @@ class FeatureItem extends React.Component{
         return (
             <div>
                 <h4>{this.props.name}</h4>
-                <p>{this.props.tag}</p>
+                <p>{this.props.content}</p>
             </div>
         );
     }

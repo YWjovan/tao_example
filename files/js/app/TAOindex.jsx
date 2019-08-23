@@ -7,6 +7,6 @@ $(document).ready(function() {
 	ReactDOM.TAO.load('loginMenu', <LoginMenu param={{}} />, document.getElementById('loginMenu'));
 	ReactDOM.TAO.load('ourMission', <OurMission param={{}} />, document.getElementById('ourMission'));
 	ReactDOM.TAO.load('footer', <Footer param={{}} />, document.getElementById('footer'));
-	ReactDOM.TAO.load('featureItem', <FeatureItem param={{name, tag}} />, document.getElementById('featureItem'));
+	ReactDOM.TAO.load('featureItem', <FeatureItem param={{}} />, document.getElementById('featureItem'));
 });
 
