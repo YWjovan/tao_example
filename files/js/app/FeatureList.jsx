@@ -1,14 +1,19 @@
 class FeatureList extends React.Component{
     constructor(props){
         super(props);
-        this.state = {mm: [{"yw": "123"}, {"eric": "234"}, {"oliver": "345"}]};
+        var items= [];
+        items.push({
+            name: "yw",
+            tag: "123"
+        });
+        this.state = {items};
     }
 
     render() {
         return (
             <div>
-                {this.state.mm.map((item) => {
-                    return <p>{item.key}</p>
+                {this.state.items.map((item, index) => {
+                    return (<FeatureItem name={item.name} tag={item.tag}/>)
                 })}
                 {/*{this.state.mm.map(function (item, index) {*/}
                 {/*    return (<FeatureItem  name={item.key} tag={item.value} />)*/}
