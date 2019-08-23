@@ -13,7 +13,7 @@ class About extends React.Component{
         return (
             <div>
                 <h1>About Taobase.com</h1>
-                <AboutContent contents={this.state.contents} />
+                {/*<AboutContent contents={this.state.contents} />*/}
                 <button>Learn more!</button>
             </div>
         );
