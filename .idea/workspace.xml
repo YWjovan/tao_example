@@ -27,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/files/js/app/FeatureList.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="150">
+              <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -234,12 +234,12 @@
       <workItem from="1566517821795" duration="37000" />
       <workItem from="1566517879964" duration="20000" />
       <workItem from="1566517973875" duration="40000" />
-      <workItem from="1566518034277" duration="3174000" />
+      <workItem from="1566518034277" duration="3292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28483000" />
+    <option name="totallyTimeSpent" value="28601000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,8 +473,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/files/js/app/FeatureList.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        <state relative-caret-position="150">
+          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
         </state>
       </provider>
     </entry>

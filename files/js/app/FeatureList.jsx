@@ -8,7 +8,7 @@ class FeatureList extends React.Component{
         return (
             <div>
                 {this.state.mm.map((item) => {
-                    return <p>item.key</p>
+                    return <p>{item.key}</p>
                 })}
                 {/*{this.state.mm.map(function (item, index) {*/}
                 {/*    return (<FeatureItem  name={item.key} tag={item.value} />)*/}
