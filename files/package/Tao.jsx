@@ -21,6 +21,8 @@
 		"/js/app/FeatureItem.jsx",
 		"/js/app/FeatureList.jsx",
 		"/js/app/About.jsx",
-	 	"/js/app/AboutContent.jsx"
+	 	"/js/app/AboutContent.jsx",
+		"/js/app/Member.jsx",
+		"/js/app/Members.jsx"
 	]
 }
