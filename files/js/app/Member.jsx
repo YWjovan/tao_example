@@ -5,7 +5,7 @@ class Member extends React.Component{
 
     render() {
         return (
-            <div>
+            <div style={{display:'inline-block'}}>
                 <h3>{this.props.number}</h3>
             </div>
         );
