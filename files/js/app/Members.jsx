@@ -7,7 +7,7 @@ class Members extends React.Component{
 
     render() {
         return (
-            <div>
+            <div style={{display: 'inline-block'}}>
                 <button>left</button>
                 {this.state.numbers.map((item, index) => {
                     return (<Member number={item}/>);
