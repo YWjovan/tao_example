@@ -6,7 +6,7 @@ class FeatureList extends React.Component{
                     ".com is also an innovative platform for promoting and sharing of new technologies, innovations and patent technologies.",
                     "TaoBase.com is designed for SMB owners to build a business network locally and globally -- both at the same time."];
         var head = "http://yw.dev.shusiou.win";
-        var srcs = [head + "/images/business1.jpg", head + "../images/business2.jpg", head + "../images/business3.jpg"];
+        var srcs = [head + "/images/business1.jpg", head + "/images/business2.jpg", head + "/images/business3.jpg"];
         var items = [];
         for(var i = 0; i < names.length; i ++){
             items.push({
