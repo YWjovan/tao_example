@@ -5,7 +5,8 @@ class FeatureList extends React.Component{
         var tags = [".com creates an online business ecosystem to help entrepreneurs around the globe produce new ideas.",
                     ".com is also an innovative platform for promoting and sharing of new technologies, innovations and patent technologies.",
                     "TaoBase.com is designed for SMB owners to build a business network locally and globally -- both at the same time."];
-        var srcs = ["../images/business1.jpg", "../images/business2.jpg", "../images/business3.jpg"];
+        var head = "http://yw.dev.shusiou.win";
+        var srcs = [head + "/images/business1.jpg", head + "../images/business2.jpg", head + "../images/business3.jpg"];
         var items = [];
         for(var i = 0; i < names.length; i ++){
             items.push({
