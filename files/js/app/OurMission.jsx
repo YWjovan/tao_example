@@ -8,10 +8,10 @@ class OurMission extends React.Component{
         //     padding-top:'120px',
         //     padding-bottom: '30px'
         // }
-        this.state = {
-            pstyle: pstyle,
-            hstyle: hstyle
-        };
+        // this.state = {
+        //     pstyle: pstyle,
+        //     hstyle: hstyle
+        // };
     }
 
     render() {

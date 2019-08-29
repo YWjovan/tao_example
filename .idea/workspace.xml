@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee7068e-837d-43f6-b582-e0967ce575e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/app/LoginTopMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/LoginTopMenu.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/js/app/OurMission.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/OurMission.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -46,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/js/app/TAORoot.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2400">
+            <state relative-caret-position="270">
               <caret line="160" column="24" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
             </state>
           </provider>
@@ -64,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/js/app/LoginTopMenu.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="270">
+              <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -109,7 +109,6 @@
         <option value="$PROJECT_DIR$/files/js/app/TAORoot.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/TopMenu.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/LeftBox.jsx" />
-        <option value="$PROJECT_DIR$/files/js/app/LoginTopMenu.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/TaoContent.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/LoginMenu.jsx" />
         <option value="$PROJECT_DIR$/files/package/yw.css" />
@@ -126,6 +125,7 @@
         <option value="$PROJECT_DIR$/files/js/app/Members.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/Member.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/TaoController.jsx" />
+        <option value="$PROJECT_DIR$/files/js/app/LoginTopMenu.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/OurMission.jsx" />
       </list>
     </option>
@@ -158,25 +158,6 @@
               <item name="tao_example" type="b2602c69:ProjectViewProjectNode" />
               <item name="tao_example" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tao_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tao_example" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tao_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tao_example" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tao_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tao_example" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="package" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -263,12 +244,12 @@
       <workItem from="1567027048622" duration="30000" />
       <workItem from="1567027112926" duration="121000" />
       <workItem from="1567027264394" duration="792000" />
-      <workItem from="1567104891174" duration="425000" />
+      <workItem from="1567104891174" duration="838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37181000" />
+    <option name="totallyTimeSpent" value="37594000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -374,9 +355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2166" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cron_service/cron.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/files/package/Tao.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -486,13 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/js/app/TAORoot.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2400">
-          <caret line="160" column="24" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/files/js/app/TAOindex.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -530,8 +501,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/files/js/app/LoginTopMenu.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="270">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cron_service/cron.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/js/app/TAORoot.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="160" column="24" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
         </state>
       </provider>
     </entry>
