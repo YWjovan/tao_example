@@ -48,7 +48,7 @@ class AffiliatePartner extends React.Component{
     render() {
         if(this.state.isLoaded) {
             return (
-                <People people={this.state.peopleList} />
+                <People peopleList={this.state.peopleList} />
             );
         }else {
             return (
