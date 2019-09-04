@@ -1,3 +1,5 @@
+import request from "./helper";
+
 class People extends React.Component{
     constructor(props) {
         super(props);
@@ -24,24 +26,30 @@ class AffiliatePartner extends React.Component{
 
     componentDidMount() {
         const me = this;
-        fetch('http://yw.dev.shusiou.win/data.json', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json;charset=UTF-8'
-            },
-            mode: "cors",
-            cache: "default"
+        // fetch('http://yw.dev.shusiou.win/data.json', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Content-Type': 'application/json;charset=UTF-8'
+        //     },
+        //     mode: "cors",
+        //     cache: "default"
+        // })
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         //console.log(data);
+        //         this.setState({peopleList: data}, function () {
+        //             console.log(this.state.peopleList);
+        //             this.setState({isLoaded: true}, function () {
+        //                 console.log(this.state.isLoaded)
+        //             });
+        //         })
+        //     });
+        request({
+            url: '/data',
+            method: 'post',
+        }).then(function(res){
+            console.log(res);
         })
-            .then(res => res.json())
-            .then(data => {
-                //console.log(data);
-                this.setState({peopleList: data}, function () {
-                    console.log(this.state.peopleList);
-                    this.setState({isLoaded: true}, function () {
-                        console.log(this.state.isLoaded)
-                    });
-                })
-            });
     }
 
     render() {
