@@ -45,7 +45,7 @@ class AffiliatePartner extends React.Component{
         //         })
         //     });
         request({
-            url: '/data',
+            url: '/data.json',
             method: 'post',
         }).then(function(res){
             console.log(res);
