@@ -23,6 +23,7 @@
 		"/js/app/About.jsx",
 	 	"/js/app/AboutContent.jsx",
 		"/js/app/Member.jsx",
-		"/js/app/Members.jsx"
+		"/js/app/Members.jsx",
+		"/js/app/AffiliatePartner.jsx"
 	]
 }
