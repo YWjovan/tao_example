@@ -4,15 +4,11 @@ class People extends React.Component{
     }
     render() {
         return (
-            this.props.peopleList.people.map((item, index) => {
-                return (
-                    <div>
-                        <div>{item.id}</div>
-                        <div>{item.name}</div>
-                    </div>
-                )
-            })
-        );
+            <div>
+                <div>{this.props.id}</div>
+                <div>{this.props.name}</div>
+            </div>
+        )
     }
 }
 
@@ -48,12 +44,16 @@ class AffiliatePartner extends React.Component{
     render() {
         if(this.state.isLoaded) {
             return (
-                <People peopleList={this.state.peopleList} />
-            );
+                this.props.peopleList.people.map((item, index) => {
+                    return (
+                        <People people={item} />
+                    )
+                })
+            )
         }else {
             return (
                 <div>loading...</div>
-            );
+            )
         }
     }
 }
