@@ -1,6 +1,3 @@
-import request from './helper';
-import React from 'react'
-
 class People extends React.Component{
     constructor(props) {
         super(props);
@@ -45,12 +42,18 @@ class AffiliatePartner extends React.Component{
         //             });
         //         })
         //     });
-        request.request({
+        ReactDOM.helper.request({
             url: '/data.json',
             method: 'GET',
         }).then(data => {
             console.log(data);
         })
+        // request.request({
+        //     url: '/data.json',
+        //     method: 'GET',
+        // }).then(data => {
+        //     console.log(data);
+        // })
     }
 
     render() {
