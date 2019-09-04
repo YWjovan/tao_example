@@ -10,6 +10,6 @@ $(document).ready(function() {
 	ReactDOM.TAO.load('footer', <Footer param={{}} />, document.getElementById('footer'));
 	ReactDOM.TAO.load('featureList', <FeatureList param={{}} />, document.getElementById('featureList'));
 	ReactDOM.TAO.load('members', <Members param={{}} />, document.getElementById('members'));
-	ReactDOM.TAO.load('affilatePartner', <AffilatePartner param={{}} />, document.getElementById("affilatePartner"));
+	ReactDOM.TAO.load('affiliatePartner', <AffiliatePartner param={{}} />, document.getElementById("affiliatePartner"));
 });
 
