@@ -49,7 +49,7 @@ class AffiliatePartner extends React.Component{
         // console.log("peopleList:" + this.state.peopleList);
         if(this.state.isLoaded) {
             return (
-                this.props.peopleList.people.map((item, index) => {
+                this.state.peopleList.people.map((item, index) => {
                     return (
                         <People id={item.id} name={item.name}/>
                     )
