@@ -1,7 +1,6 @@
-(function () {
-
+(function() {
     ReactDOM.helper = {
-        commonURL: "http://yw.dev.shusiou.win",
+        commonURL: 'http://yw.dev.shusiou.win',
 
         parseJSON: function(response) {
             return response.json();
