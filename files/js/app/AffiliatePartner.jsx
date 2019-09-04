@@ -1,4 +1,5 @@
 import request from './helper';
+import React from 'react'
 
 class People extends React.Component{
     constructor(props) {
