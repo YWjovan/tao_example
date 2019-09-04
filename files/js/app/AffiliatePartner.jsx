@@ -34,9 +34,11 @@ class AffiliatePartner extends React.Component{
         })
             .then(res => res.json())
             .then(data => {
-                //console.log(data);
-                this.setState({isLoaded: true, peopleList: data}, function () {
-                    console.log(this.state.peopleList)
+                this.setState({isLoaded: true}, function () {
+                    console.log(this.state.isLoaded);
+                    this.setState({peopleList: data}, function () {
+                        console.log(this.state.peopleList)
+                    });
                 })
             });
     }
