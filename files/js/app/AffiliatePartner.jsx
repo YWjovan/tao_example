@@ -42,7 +42,7 @@ class AffiliatePartner extends React.Component{
     }
 
     render() {
-        concole.log(this.state.isLoaded);
+        console.log(this.state.isLoaded);
         if(this.state.isLoaded) {
             return (
                 this.props.peopleList.people.map((item, index) => {
