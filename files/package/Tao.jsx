@@ -24,7 +24,6 @@
 	 	"/js/app/AboutContent.jsx",
 		"/js/app/Member.jsx",
 		"/js/app/Members.jsx",
-		"/js/app/AffiliatePartner.jsx",
-		"/js/app/helper.jsx"
+		"/js/app/AffiliatePartner.jsx"
 	]
 }
