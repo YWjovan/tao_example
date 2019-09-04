@@ -42,7 +42,8 @@ class AffiliatePartner extends React.Component{
     }
 
     render() {
-        console.log(this.state.isLoaded);
+        console.log("isloaded?" + this.state.isLoaded);
+        console.log("peopleList:" + this.state.peopleList);
         if(this.state.isLoaded) {
             return (
                 this.props.peopleList.people.map((item, index) => {
