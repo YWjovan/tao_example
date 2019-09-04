@@ -1,4 +1,4 @@
-import request from "./helper";
+import request from "./helper.jsx";
 
 class People extends React.Component{
     constructor(props) {
