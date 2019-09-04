@@ -21,12 +21,12 @@ export default function request(options = {}) {
     delete options.url;
     if(data) {
         delete options.data;
-        options.body = JSON.stringify({data});
+        //options.body = JSON.stringify({data});
     }
     options.headers = {
         'Content-Type': 'application/json'
     };
-    return fetch(commonURL + url, options, {credentials: 'include'})
+    return fetch(commonURL + url, options)
         .then(checkStatus)
         .then(parseJSON)
         .catch(err => ({err}));
