@@ -1,6 +1,7 @@
 class LoginMenu extends React.Component{
     constructor(props){
         super(props);
+        this.state = { list: []};
     }
 
     componentDidMount() {
@@ -12,6 +13,7 @@ class LoginMenu extends React.Component{
             dataType: 'JSON',
             timeout: (6 * 1000),
             success: function(resultData){
+                console.log(resultData);
                 me.setState({list : resultData.data, _TM : new Date().getTime()});
             },
             error : function(err) {
