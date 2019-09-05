@@ -4,18 +4,34 @@ class LoginMenu extends React.Component{
     }
 
     componentDidMount() {
-        fetch('http://yw.dev.shusiou.win/api/testLogin.js', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json;charset=UTF-8'
+        var me = this;
+        ReactDOM.TAO.dataEngine({
+            type: 'POST',
+            url: 'http://yw.dev.shusiou.win/api/testLogin',
+            data: {},
+            dataType: 'JSON',
+            timeout: (6 * 1000),
+            success: function(resultData){
+                me.setState({list : resultData.data, _TM : new Date().getTime()});
             },
-            mode: "cors",
-            cache: "default"
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-            })
+            error : function(err) {
+                console.log('err');
+            },
+            spinner : me
+        });
+
+        // fetch('http://yw.dev.shusiou.win/api/testLogin.js', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Content-Type': 'application/json;charset=UTF-8'
+        //     },
+        //     mode: "cors",
+        //     cache: "default"
+        // })
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log(data);
+        //     })
     }
 
     render() {
