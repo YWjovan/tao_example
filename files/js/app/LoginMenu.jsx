@@ -12,9 +12,7 @@ class LoginMenu extends React.Component{
                 <p>or</p>
                 <input type='text' name='user' placeholder='Email' /><br/>
                 <input type='text' name='password' placeholder='Password' /><br/>
-                <select>
-                    <option>remember me</option>
-                </select>
+                <input type='checkbox' value='remember'/> remember me
                 <span><a>forgot password?</a></span>
                 <button>Login</button>
                 <span>Not register?</span><span><a>Sign up</a></span><span>for free membership</span>
