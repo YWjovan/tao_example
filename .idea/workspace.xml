@@ -73,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/files/js/app/LoginMenu.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -268,12 +268,12 @@
       <workItem from="1567118510083" duration="437000" />
       <workItem from="1567127705924" duration="25000" />
       <workItem from="1567128725228" duration="134000" />
-      <workItem from="1567560119826" duration="9491000" />
+      <workItem from="1567560119826" duration="9782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48542000" />
+    <option name="totallyTimeSpent" value="48833000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -562,7 +562,7 @@
     <entry file="file://$PROJECT_DIR$/files/js/app/LoginMenu.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
         </state>
       </provider>
     </entry>

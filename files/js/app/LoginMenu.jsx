@@ -13,10 +13,10 @@ class LoginMenu extends React.Component{
                 <input type='text' name='user' placeholder='Email' /><br/>
                 <input type='text' name='password' placeholder='Password' /><br/>
                 <input type='checkbox' value='remember'/> remember me
-                <span><a>forgot password?</a></span>
-                <button>Login</button>
+                <span><a>forgot password?</a></span><br/>
+                <button>Login</button><br/>
                 <span>Not register?</span><span><a>Sign up</a></span><span>for free membership</span>
             </div>
-        );
+        )
     }
 }
