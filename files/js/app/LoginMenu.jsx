@@ -8,7 +8,7 @@ class LoginMenu extends React.Component{
             <div>
                 <p>Logo</p>
                 <p>connect with</p>
-                <MediaLogin />
+                <Medias />
                 <p>or</p>
                 <input type='text' name='user' defaultValue='Email' /><br/>
                 <input type='text' name='password' defaultValue='Password' /><br/>
