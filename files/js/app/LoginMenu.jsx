@@ -3,6 +3,21 @@ class LoginMenu extends React.Component{
         super(props);
     }
 
+    componentDidMount() {
+        fetch('http://yw.dev.shusiou.win/api/testLogin.js', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8'
+            },
+            mode: "cors",
+            cache: "default"
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+            })
+    }
+
     render() {
         return (
             <div>
