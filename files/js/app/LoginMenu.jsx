@@ -8,7 +8,7 @@ class LoginMenu extends React.Component{
         var me = this;
         ReactDOM.TAO.dataEngine({
             type: 'POST',
-            url: 'http://yw.dev.shusiou.win/api/testLogin',
+            url: 'http://yw.dev.shusiou.win/api/testLogin.api',
             data: {},
             dataType: 'JSON',
             timeout: (6 * 1000),
