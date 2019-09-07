@@ -23,7 +23,7 @@ client.connect(function(err) {
         if(err) {
             console.log('error message is ' + err.message);
         }else {
-            console.log(res.rows[0].now);
+            console.log(res);
         }
         cilent.end();
     });
