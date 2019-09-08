@@ -18,7 +18,7 @@ client.connect(function(err) {
         return;
     }
 
-    let str = 'SELECT * FROM eliteuser_basic WHERE email = yuewangjovan@gmail.com;';
+    let str = 'SELECT * FROM eliteuser_basic;';
     client.query(str, function(err, res) {
         if(err) {
             console.log('error message is ' + err.message);
