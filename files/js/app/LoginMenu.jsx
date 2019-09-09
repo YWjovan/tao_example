@@ -14,7 +14,7 @@ class LoginMenu extends React.Component{
             timeout: (6 * 1000),
             success: function(resultData){
                 console.log(resultData);
-                me.setState({list : resultData, _TM : new Date().getTime()});
+                me.setState({list : resultData});
             },
             error : function(err) {
                 console.log('err');
