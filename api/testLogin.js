@@ -26,7 +26,7 @@ client.connect(function(err) {
         }else {
             console.log(res);
         }
-        TAO.res.send(res);
+        //TAO.res.send(res);
         cilent.end();
     });
 });
