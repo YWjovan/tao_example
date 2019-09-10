@@ -34,7 +34,7 @@ client.connect(function(err) {
     client.query(sqlStr,
         function(err, result) {
             if(err) {
-                q_result.data  = ['error occurs'];
+                q_result.data  = [error.message];
             } else {
                 q_result.data = result.rows;
             }
