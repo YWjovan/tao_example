@@ -6,21 +6,21 @@ class LoginMenu extends React.Component{
 
     componentDidMount() {
         var me = this;
-        ReactDOM.TAO.dataEngine({
-            type: 'POST',
-            url: 'http://yw.dev.shusiou.win/api/testLogin.api',
-            data: {},
-            dataType: 'JSON',
-            timeout: (6 * 1000),
-            success: function(resultData){
-                me.setState({list : resultData});
-                console.log(this.state.list);
-            },
-            error : function(err) {
-                console.log('err');
-            },
-            spinner : me
-        });
+        // ReactDOM.TAO.dataEngine({
+        //     type: 'POST',
+        //     url: 'http://yw.dev.shusiou.win/api/testLogin.api',
+        //     data: {},
+        //     dataType: 'JSON',
+        //     timeout: (6 * 1000),
+        //     success: function(resultData){
+        //         me.setState({list : resultData});
+        //         console.log(this.state.list);
+        //     },
+        //     error : function(err) {
+        //         console.log('err');
+        //     },
+        //     spinner : me
+        // });
 
         // fetch('http://yw.dev.shusiou.win/api/testLogin.js', {
         //     method: 'GET',
