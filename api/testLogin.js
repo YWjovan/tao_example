@@ -12,14 +12,14 @@ var client = new pg.Client(setting.dev.PG_evergreen);
 
 client.connect(function(err) {
     if(err) {
-        // TAO.res.send(err.message);
-        console.log('error message is ' + err.message);
+        TAO.res.send(err.message);
+        // console.log('error message is ' + err.message);
         // client.end();
         return true;
     }
-    console.log('connect successfully!');
+    // console.log('connect successfully!');
     // let str = 'SELECT datname FROM pg_database WHERE datistemplate = false;';
-    // let str = 'SELECT * FROM eliteuser_basic;';
+    let sqlStr = 'SELECT * FROM eliteuser_basic;';
     // client.query(str, function(err, res) {
     //     if(err) {
     //         console.log('error message is ' + err.message);
@@ -29,4 +29,21 @@ client.connect(function(err) {
     //     //TAO.res.send(res);
     //     cilent.end();
     // });
+
+    var q_result = {};
+    client.query(sqlStr,
+        function(err, result) {
+            if(err) {
+                q_result.data  = [];
+            } else {
+                q_result.data = result.rows;
+            }
+            client.end();
+            setTimeout(
+                function() {
+                    TAO.res.send(q_result);
+                }, Math.floor(Math.random() * 3 + 3) * 500
+            );
+
+        });
 });
