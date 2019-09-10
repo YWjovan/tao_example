@@ -14,8 +14,8 @@ client.connect(function(err) {
     if(err) {
         // TAO.res.send(err.message);
         console.log('error message is ' + err.message);
-        client.end();
-        return;
+        // client.end();
+        return true;
     }
     console.log('connect successfully!');
     // let str = 'SELECT datname FROM pg_database WHERE datistemplate = false;';
