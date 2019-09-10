@@ -17,16 +17,16 @@ client.connect(function(err) {
         client.end();
         return;
     }
-
+    console.log('connect successfully!');
     // let str = 'SELECT datname FROM pg_database WHERE datistemplate = false;';
-    let str = 'SELECT * FROM eliteuser_basic;';
-    client.query(str, function(err, res) {
-        if(err) {
-            console.log('error message is ' + err.message);
-        }else {
-            console.log(res);
-        }
-        //TAO.res.send(res);
-        cilent.end();
-    });
+    // let str = 'SELECT * FROM eliteuser_basic;';
+    // client.query(str, function(err, res) {
+    //     if(err) {
+    //         console.log('error message is ' + err.message);
+    //     }else {
+    //         console.log(res);
+    //     }
+    //     //TAO.res.send(res);
+    //     cilent.end();
+    // });
 });
