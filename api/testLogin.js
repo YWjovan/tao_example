@@ -6,7 +6,7 @@ var pg = TAO.require(TAO.env.root_path + '/vendor/pg/node_modules/pg');
 var connStr = "postgres://evergreen:Ahiuhwqceiuw168@mydbinstance1.clphgmho1uem.us-west-1.rds.amazonaws.com:5432/ebiztiedb";
 
 // setting.dev.PG_evergreen.connectionTimeoutMillis = 6000;
-
+console.log("test");
 var client = new pg.Client(connStr);
 // var client = new pg.Client(setting.dev.PG_evergreen);
 client.connect(function(err) {
