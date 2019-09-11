@@ -10,7 +10,7 @@ class TopMenu extends React.Component {
 
 	ReactDOM.TAO.dataEngine({
 	     type: 'POST',
-	     url: 'http://yw.dev.shusiou.win/api/Tao/API_PG.api?code=PGdatabases',
+	     url: 'http://yw_dev.shusiou.win/api/Tao/API_PG.api?code=PGdatabases',
 	     data: {},
 	     dataType: 'JSON',
 	     timeout: (6 * 1000),
