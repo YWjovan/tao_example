@@ -24,7 +24,7 @@ class AffiliatePartner extends React.Component{
 
     componentDidMount() {
         const me = this;
-        fetch('http://yw.dev.shusiou.win/data.json', {
+        fetch('http://yw_dev.shusiou.win/data.json', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json;charset=UTF-8'
