@@ -2,7 +2,7 @@ import cookie from 'react-cookie';
 class LoginMenu extends React.Component{
     constructor(props){
         super(props);
-        cookie.save('token', '123');
+        cookie.save('token', '123', {path: '/'});
         this.state = { list: [], token: cookie.load('token')};
     }
 
