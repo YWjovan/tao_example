@@ -18,7 +18,8 @@ class AffiliatePartner extends React.Component{
         super(props);
         this.state = {
             isLoaded: false,
-            peopleList: {}
+            peopleList: {},
+            token: cookie.load('token')
         };
     }
 
@@ -61,6 +62,7 @@ class AffiliatePartner extends React.Component{
         // console.log("peopleList:" + this.state.peopleList);
         if(this.state.isLoaded) {
             return (
+                if(this.state.token === '123') console.log('token get');
                 this.state.peopleList.people.map((item, index) => {
                     return (
                         <People id={item.id} name={item.name}/>
