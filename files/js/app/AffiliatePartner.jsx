@@ -1,3 +1,4 @@
+import cookie from 'react-cookie';
 class People extends React.Component{
     constructor(props) {
         super(props);
@@ -11,7 +12,6 @@ class People extends React.Component{
         )
     }
 }
-
 
 class AffiliatePartner extends React.Component{
     constructor(props) {

@@ -1,3 +1,4 @@
+import cookie from 'react-cookie';
 class LoginMenu extends React.Component{
     constructor(props){
         super(props);
