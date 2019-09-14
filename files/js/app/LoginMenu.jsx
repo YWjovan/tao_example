@@ -1,4 +1,4 @@
-import cookie from 'react-cookie';
+import cookie from '/js/react/react-cookie.0.4.9.min.js';
 class LoginMenu extends React.Component{
     constructor(props){
         super(props);
