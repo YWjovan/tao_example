@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee7068e-837d-43f6-b582-e0967ce575e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/files/js/app/AffiliatePartner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/AffiliatePartner.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/app/LoginMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/LoginMenu.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,16 +51,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/files/js/app/LoginMenu.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+            <state relative-caret-position="270">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/js/app/AffiliatePartner.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="148">
@@ -124,9 +124,9 @@
         <option value="$PROJECT_DIR$/files/js/app/FeatureList.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/TopMenu.jsx" />
         <option value="$PROJECT_DIR$/api/testLogin.js" />
-        <option value="$PROJECT_DIR$/files/js/app/LoginMenu.jsx" />
         <option value="$PROJECT_DIR$/files/index.html" />
         <option value="$PROJECT_DIR$/files/js/app/AffiliatePartner.jsx" />
+        <option value="$PROJECT_DIR$/files/js/app/LoginMenu.jsx" />
       </list>
     </option>
   </component>
@@ -297,12 +297,12 @@
       <workItem from="1568238878792" duration="675000" />
       <workItem from="1568252708581" duration="376000" />
       <workItem from="1568253255423" duration="21000" />
-      <workItem from="1568493897185" duration="375000" />
+      <workItem from="1568493897185" duration="415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65182000" />
+    <option name="totallyTimeSpent" value="65222000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,17 +596,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/js/app/LoginMenu.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/files/js/app/AffiliatePartner.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/js/app/LoginMenu.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
