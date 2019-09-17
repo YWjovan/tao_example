@@ -1,12 +1,10 @@
 class LoginMenu extends React.Component{
     constructor(props){
         super(props);
-        var cookie = new Cookies();
-        cookie.set('token', '123', {path: '/'});
         // cookie.save('token', '123', {path: '/'});
-        this.state = { list: [], token: cookie.get('token')};
+        this.state = { list: []};
         // this.state = { list: [], token: cookie.load('token')};
-        console.log(cookie.get('token'));
+        if(typeof window !== 'undefined') console.log('123');
     }
 
     componentDidMount() {

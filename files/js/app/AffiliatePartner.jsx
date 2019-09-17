@@ -1,7 +1,7 @@
 class People extends React.Component{
     constructor(props) {
         super(props);
-        var cookie = new Cookies();
+        // var cookie = new Cookies();
     }
     render() {
         return (
@@ -18,10 +18,9 @@ class AffiliatePartner extends React.Component{
         super(props);
         this.state = {
             isLoaded: false,
-            peopleList: {},
-            token: cookie.load('token')
+            peopleList: {}
         };
-        if(this.state.token === '123') console.log('token get');
+        // if(this.state.token === '123') console.log('token get');
     }
 
     componentDidMount() {
