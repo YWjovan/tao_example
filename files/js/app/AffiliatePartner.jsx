@@ -1,7 +1,7 @@
-import cookie from 'react-cookie';
 class People extends React.Component{
     constructor(props) {
         super(props);
+        var cookie = new Cookies();
     }
     render() {
         return (
