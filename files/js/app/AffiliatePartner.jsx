@@ -21,7 +21,7 @@ class AffiliatePartner extends React.Component{
             peopleList: {}
         };
         window.reactCookie.save('token', 'hello cookie', {path: '/'});
-        console.log('token get' + window['token']);
+        console.log('token get:' + window.reactCookie.load('token'));
     }
 
     componentDidMount() {
