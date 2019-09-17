@@ -20,7 +20,7 @@ class AffiliatePartner extends React.Component{
             isLoaded: false,
             peopleList: {}
         };
-        // if(this.state.token === '123') console.log('token get');
+        console.log('token get' + window['token']);
     }
 
     componentDidMount() {
