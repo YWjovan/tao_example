@@ -1,9 +1,13 @@
-import cookie from '/js/react/react-cookie.0.4.9.min.js';
+import Cookies from 'universal-cookie';
 class LoginMenu extends React.Component{
     constructor(props){
         super(props);
-        cookie.save('token', '123', {path: '/'});
-        this.state = { list: [], token: cookie.load('token')};
+        var cookie = new Cookies();
+        cookie.set('token', '123', {path: '/'});
+        // cookie.save('token', '123', {path: '/'});
+        this.state = { list: [], token: cookie.get('token')};
+        // this.state = { list: [], token: cookie.load('token')};
+        console.log(cookie.get('token'));
     }
 
     componentDidMount() {
