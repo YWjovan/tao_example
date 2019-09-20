@@ -28,8 +28,8 @@ class LoginMenu extends React.Component{
     }
 
     onClick(event) {
-        var me = event;
-        var url = 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + this.state.user + '&pass=' + this.state.password;
+        var me = this;
+        var url = 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + me.state.user + '&pass=' + me.state.password;
         console.log(url);
         ReactDOM.TAO.dataEngine({
             type: 'POST',
@@ -39,16 +39,16 @@ class LoginMenu extends React.Component{
             timeout: (6 * 1000),
             success: function(resultData){
                 me.setState({list : resultData});
-                console.log(this.state.list);
+                console.log(me.state.list);
             },
             error : function(err) {
                 console.log('err');
             },
             spinner : me
         });
-        if(this.state.list.length == 1){
-            this.setState({token: 'token'});
-            window.reactCookie.save('token', this.state.token);
+        if(me.state.list.length == 1){
+            me.setState({token: 'token'});
+            window.reactCookie.save('token', me.state.token);
         }
     }
 
