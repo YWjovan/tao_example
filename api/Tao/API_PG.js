@@ -31,7 +31,8 @@ switch( TAO.req.query.code) {
                     client.end();
                     setTimeout(
                       function() {
-                        TAO.res.send(q_result);
+                        // TAO.res.send(q_result);
+                        TAO.res.send(setting);
                       }, Math.floor(Math.random() * 3 + 3) * 500
                     );
                     
