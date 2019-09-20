@@ -52,6 +52,7 @@ class LoginMenu extends React.Component{
 
     onUserTextChange(event) {
         this.setState({user: event.target.value});
+        console.log(this.state.user);
     }
 
     onPasswordChange(event) {
