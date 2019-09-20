@@ -2,31 +2,36 @@ class LoginMenu extends React.Component{
     constructor(props){
         super(props);
         // cookie.save('token', '123', {path: '/'});
-        this.state = { list: []};
-        // this.state = { list: [], token: cookie.load('token')};
-        window['token'] = '123';
-        // if(typeof window !== 'undefined') console.log('cookie get:' + window['token']);
+        this.state = {
+            list: [],
+            user: "",
+            password: "",
+            token: ""
+        };
     }
 
     componentDidMount() {
         var me = this;
 
-        // ReactDOM.TAO.dataEngine({
-        //     type: 'POST',
-        //     url: 'http://yw.dev.shusiou.win/api/testLogin.api',
-        //     data: {},
-        //     dataType: 'JSON',
-        //     timeout: (6 * 1000),
-        //     success: function(resultData){
-        //         me.setState({list : resultData});
-        //         console.log(this.state.list);
-        //     },
-        //     error : function(err) {
-        //         console.log('err');
-        //     },
-        //     spinner : me
-        // });
-
+        ReactDOM.TAO.dataEngine({
+            type: 'POST',
+            url: 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + this.state.user + '&pass=' + this.state.password,
+            data: {},
+            dataType: 'JSON',
+            timeout: (6 * 1000),
+            success: function(resultData){
+                me.setState({list : resultData});
+                console.log(this.state.list);
+            },
+            error : function(err) {
+                console.log('err');
+            },
+            spinner : me
+        });
+        if(this.list.length == 1){
+            this.setState({token: 'token'});
+            window.reactCookie.save('token', this.state.token);
+        }
         // fetch('http://yw.dev.shusiou.win/api/testLogin.js', {
         //     method: 'GET',
         //     headers: {

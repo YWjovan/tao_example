@@ -1,5 +1,5 @@
-var code = TAO.req.query.code;
 var user = TAO.req.query.user;
+var pass = TAO.req.query.pass;
 var output = code + "-" + user;
 delete TAO.require.cache[TAO.env.root_path + '/vendor/pg/node_modules/pg'];
 var pg = TAO.require(TAO.env.root_path + '/vendor/pg/node_modules/pg');
@@ -21,7 +21,7 @@ client.connect(function(err) {
     }
     // console.log('connect successfully!');
     // let str = 'SELECT datname FROM pg_database WHERE datistemplate = false;';
-    let sqlStr = 'SELECT * FROM eliteuser_basic;';
+    let sqlStr = 'SELECT * FROM eliteuser_basic where email=' + user + 'and passWordHash=' + pass + ';';
     // client.query(str, function(err, res) {
     //     console.log(err);
     //     // if(err) {
@@ -44,8 +44,7 @@ client.connect(function(err) {
             client.end();
             setTimeout(
                 function() {
-                    // TAO.res.send(q_result);
-                    TAO.res.send(output);
+                    TAO.res.send(q_result);
                 }, Math.floor(Math.random() * 3 + 3) * 500
             );
 
