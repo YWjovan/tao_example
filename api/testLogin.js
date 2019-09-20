@@ -36,9 +36,9 @@ client.connect(function(err) {
     client.query(sqlStr,
         function(err, result) {
             if(err) {
-                q_result.data  = [err.message];
+                q_result.data  = ["error message:" + err.message];
             } else {
-                q_result.data = result.rows;
+                q_result.data = result;
             }
             client.end();
             setTimeout(
