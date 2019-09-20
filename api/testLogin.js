@@ -6,9 +6,9 @@ var setting =  TAO.require(TAO.env.config_path + '/dbSetting.json');
 
 // var connStr = "postgres://evergreen:Ahiuhwqceiuw168@mydbinstance1.clphgmho1uem.us-west-1.rds.amazonaws.com:5432/ebiztiedb";
 // var testUrl = "postgres://evergreen:Ahiuhwqceiuw168@testdbinstance1.clphgmho1uem.us-west-1.rds.amazonaws.com:5432/ebiztiedb";
-setting.dev.PG_evergreen.connectionTimeoutMillis = 6000;
+setting.prod.PG.connectionTimeoutMillis = 6000;
 // var client = new pg.Client(connStr);
-var client = new pg.Client(setting.dev.PG_evergreen);
+var client = new pg.Client(setting.prod.PG);
 client.connect(function(err) {
     if(err) {
         TAO.res.send(err.message);
@@ -17,8 +17,8 @@ client.connect(function(err) {
         return true;
     }
     // console.log('connect successfully!');
-    // // let str = 'SELECT datname FROM pg_database WHERE datistemplate = false;';
-    // let sqlStr = 'SELECT * FROM eliteuser_basic;';
+    // let str = 'SELECT datname FROM pg_database WHERE datistemplate = false;';
+    let sqlStr = 'SELECT * FROM eliteuser_basic;';
     // client.query(str, function(err, res) {
     //     console.log(err);
     //     // if(err) {
