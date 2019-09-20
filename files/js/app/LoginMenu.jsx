@@ -46,6 +46,18 @@ class LoginMenu extends React.Component{
         //     })
     }
 
+    onClick() {
+
+    }
+
+    onUserTextChange(event) {
+        this.setState({user: event.target.value});
+    }
+
+    onPasswordChange(event) {
+        this.setState({password: event.target.value});
+    }
+
     render() {
         return (
             <div>
@@ -53,8 +65,8 @@ class LoginMenu extends React.Component{
                 <p>connect with</p>
                 <Medias />
                 <p>or</p>
-                <input type='text' name='user' placeholder='Email' /><br/>
-                <input type='text' name='password' placeholder='Password' /><br/>
+                <input type='text' name='user' placeholder='Email' value={this.state.user} onChange={this.onUserTextChange}/><br/>
+                <input type='text' name='password' placeholder='Password' value={this.state.password} onChange={this.onPasswordChange}/><br/>
                 <input type='checkbox' value='remember'/> remember me
                 <span><a>forgot password?</a></span><br/>
                 <button>Login</button><br/>
