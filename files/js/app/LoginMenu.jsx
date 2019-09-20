@@ -28,7 +28,7 @@ class LoginMenu extends React.Component{
             },
             spinner : me
         });
-        if(this.list.length == 1){
+        if(this.state.list.length == 1){
             this.setState({token: 'token'});
             window.reactCookie.save('token', this.state.token);
         }
