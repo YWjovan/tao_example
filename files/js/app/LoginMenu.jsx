@@ -13,6 +13,21 @@ class LoginMenu extends React.Component{
     componentDidMount() {
         var me = this;
 
+        // fetch('http://yw.dev.shusiou.win/api/testLogin.js', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Content-Type': 'application/json;charset=UTF-8'
+        //     },
+        //     mode: "cors",
+        //     cache: "default"
+        // })
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log(data);
+        //     })
+    }
+
+    onClick(event) {
         ReactDOM.TAO.dataEngine({
             type: 'POST',
             url: 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + this.state.user + '&pass=' + this.state.password,
@@ -32,22 +47,6 @@ class LoginMenu extends React.Component{
             this.setState({token: 'token'});
             window.reactCookie.save('token', this.state.token);
         }
-        // fetch('http://yw.dev.shusiou.win/api/testLogin.js', {
-        //     method: 'GET',
-        //     headers: {
-        //         'Content-Type': 'application/json;charset=UTF-8'
-        //     },
-        //     mode: "cors",
-        //     cache: "default"
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data);
-        //     })
-    }
-
-    onClick() {
-
     }
 
     onUserTextChange(event) {
@@ -70,7 +69,7 @@ class LoginMenu extends React.Component{
                 <input type='text' name='password' placeholder='Password' value={this.state.password} onChange={this.onPasswordChange.bind(this)}/><br/>
                 <input type='checkbox' value='remember'/> remember me
                 <span><a>forgot password?</a></span><br/>
-                <button>Login</button><br/>
+                <button onClick={this.onClick.bind(this)}>Login</button><br/>
                 <span>Not register?</span><span><a>Sign up</a></span><span>for free membership</span>
             </div>
         )
