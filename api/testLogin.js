@@ -1,4 +1,6 @@
-var codes = TAO.req.query.code;
+var code = TAO.req.query.code;
+var user = TAO.req.query.user;
+var output = code + "-" + user;
 delete TAO.require.cache[TAO.env.root_path + '/vendor/pg/node_modules/pg'];
 var pg = TAO.require(TAO.env.root_path + '/vendor/pg/node_modules/pg');
 
@@ -43,7 +45,7 @@ client.connect(function(err) {
             setTimeout(
                 function() {
                     // TAO.res.send(q_result);
-                    TAO.res.send(codes);
+                    TAO.res.send(output);
                 }, Math.floor(Math.random() * 3 + 3) * 500
             );
 
