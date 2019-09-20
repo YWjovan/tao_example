@@ -3,7 +3,7 @@ var elasticsearch = TAO.require(TAO.env.root_path + '/vendor/elasticsearch/node_
 
 delete TAO.require.cache[TAO.env.config_path + '/dbSetting.json'];
 var setting =  TAO.require(TAO.env.config_path + '/dbSetting.json');
-
+console.log(setting);
 var client = new elasticsearch.Client({
   host: setting.dev.elasticsearch,
   requestTimeout: 6000
