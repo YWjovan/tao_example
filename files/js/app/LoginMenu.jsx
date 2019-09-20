@@ -29,9 +29,11 @@ class LoginMenu extends React.Component{
 
     onClick(event) {
         var me = event;
+        var url = 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + this.state.user + '&pass=' + this.state.password;
+        console.log(url);
         ReactDOM.TAO.dataEngine({
             type: 'POST',
-            url: 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + this.state.user + '&pass=' + this.state.password,
+            url: url,
             data: {},
             dataType: 'JSON',
             timeout: (6 * 1000),
@@ -52,7 +54,6 @@ class LoginMenu extends React.Component{
 
     onUserTextChange(event) {
         this.setState({user: event.target.value});
-        console.log(this.state.user);
     }
 
     onPasswordChange(event) {
