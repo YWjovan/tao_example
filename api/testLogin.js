@@ -1,6 +1,6 @@
 var user = TAO.req.query.user;
 var pass = TAO.req.query.pass;
-var output = code + "-" + user;
+
 delete TAO.require.cache[TAO.env.root_path + '/vendor/pg/node_modules/pg'];
 var pg = TAO.require(TAO.env.root_path + '/vendor/pg/node_modules/pg');
 
