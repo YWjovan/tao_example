@@ -25,6 +25,7 @@
 		"/js/app/Member.jsx",
 		"/js/app/Members.jsx",
 		"/js/app/AffiliatePartner.jsx",
-		"/js/app/Medias.jsx"
+		"/js/app/Medias.jsx",
+		"/js/app/PasswordHash.jsx"
 	]
 }

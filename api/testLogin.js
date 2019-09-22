@@ -11,6 +11,7 @@ var setting =  TAO.require(TAO.env.config_path + '/dbSetting.json');
 setting.prod.PG.connectionTimeoutMillis = 6000;
 // var client = new pg.Client(connStr);
 var client = new pg.Client(setting.prod.PG);
+var q_result = {};
 client.connect(function(err) {
     if(err) {
         TAO.res.send(err.message);
@@ -20,7 +21,7 @@ client.connect(function(err) {
     }
     // console.log('connect successfully!');
     // let str = 'SELECT datname FROM pg_database WHERE datistemplate = false;';
-    let sqlStr = 'SELECT * FROM eliteuser_basic where email=' + user + 'and passWordHash=' + pass + ';';
+    let sqlStr = 'SELECT * FROM eliteuser_basic where email=' + user + ';';
     // client.query(str, function(err, res) {
     //     console.log(err);
     //     // if(err) {
@@ -32,11 +33,11 @@ client.connect(function(err) {
     //     // cilent.end();
     // });
 
-    var q_result = {};
+    // var q_result = {};
     client.query(sqlStr,
         function(err, result) {
             if(err) {
-                q_result.data  = ["error message:" + err.message];
+                q_result.data  = [];
             } else {
                 q_result.data = result;
             }
@@ -46,6 +47,6 @@ client.connect(function(err) {
                     TAO.res.send(q_result);
                 }, Math.floor(Math.random() * 3 + 3) * 500
             );
-
         });
 });
+

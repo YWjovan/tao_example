@@ -29,7 +29,7 @@ class LoginMenu extends React.Component{
 
     onClick(event) {
         var me = this;
-        var url = 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + me.state.user + '&pass=' + me.state.password;
+        var url = 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + me.state.user;
         console.log(url);
         ReactDOM.TAO.dataEngine({
             type: 'POST',

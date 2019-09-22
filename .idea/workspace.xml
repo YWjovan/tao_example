@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee7068e-837d-43f6-b582-e0967ce575e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/PasswordHash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/testLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/testLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/js/app/LoginMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/LoginMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/package/Tao.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/package/Tao.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +30,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/testLogin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+            <state relative-caret-position="604">
+              <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/PasswordHash.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -46,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/js/app/LoginMenu.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="41" column="43" lean-forward="true" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+            <state relative-caret-position="600">
+              <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -105,7 +116,6 @@
         <option value="$PROJECT_DIR$/files/data.json" />
         <option value="$PROJECT_DIR$/files/js/app/helper.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/MediaLogin.jsx" />
-        <option value="$PROJECT_DIR$/files/package/Tao.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/Medias.jsx" />
         <option value="$PROJECT_DIR$/api/testPG.js" />
         <option value="$PROJECT_DIR$/files/js/app/LoginTopMenu.jsx" />
@@ -117,6 +127,10 @@
         <option value="$PROJECT_DIR$/api/testE.js" />
         <option value="$PROJECT_DIR$/api/Tao/API_PG.js" />
         <option value="$PROJECT_DIR$/files/js/app/LoginMenu.jsx" />
+        <option value="$PROJECT_DIR$/api/Tao/PasswordHash.js" />
+        <option value="$PROJECT_DIR$/files/package/Tao.jsx" />
+        <option value="$PROJECT_DIR$/files/js/app/PasswordHash.jsx" />
+        <option value="$PROJECT_DIR$/api/PasswordHash.js" />
         <option value="$PROJECT_DIR$/api/testLogin.js" />
       </list>
     </option>
@@ -131,6 +145,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,26 +161,7 @@
             <path>
               <item name="tao_example" type="b2602c69:ProjectViewProjectNode" />
               <item name="tao_example" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="Tao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tao_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tao_example" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tao_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tao_example" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tao_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tao_example" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tao_example" type="b2602c69:ProjectViewProjectNode" />
@@ -177,7 +173,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,12 +302,22 @@
       <workItem from="1568948382017" duration="175000" />
       <workItem from="1568948717884" duration="3179000" />
       <workItem from="1568953258957" duration="237000" />
-      <workItem from="1568953568764" duration="382000" />
+      <workItem from="1568953568764" duration="742000" />
+      <workItem from="1568955148833" duration="14000" />
+      <workItem from="1568955535128" duration="198000" />
+      <workItem from="1568956389777" duration="42000" />
+      <workItem from="1568956441389" duration="8000" />
+      <workItem from="1568956459636" duration="238000" />
+      <workItem from="1569009694193" duration="163000" />
+      <workItem from="1569009875795" duration="10000" />
+      <workItem from="1569009896376" duration="926000" />
+      <workItem from="1569016746699" duration="1023000" />
+      <workItem from="1569190446464" duration="101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78162000" />
+    <option name="totallyTimeSpent" value="81245000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -327,7 +332,7 @@
     <frame x="0" y="23" width="1440" height="815" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14799154" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14799154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -339,7 +344,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32916668" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21576764" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.21576764" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -543,13 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/package/Tao.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/files/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
@@ -574,6 +572,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/Tao/PasswordHash.js" />
+    <entry file="file://$PROJECT_DIR$/files/package/Tao.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/js/app/PasswordHash.jsx" />
     <entry file="file://$PROJECT_DIR$/api/testE.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -585,6 +592,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/js/app/LoginMenu.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -609,17 +623,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/js/app/LoginMenu.jsx">
+    <entry file="file://$PROJECT_DIR$/api/PasswordHash.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="41" column="43" lean-forward="true" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+        <state relative-caret-position="91">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/testLogin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+        <state relative-caret-position="604">
+          <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
         </state>
       </provider>
     </entry>
