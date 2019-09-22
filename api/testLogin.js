@@ -34,6 +34,7 @@ client.connect(function(err) {
     // });
 
     // var q_result = {};
+    q_result.str = sqlStr;
     client.query(sqlStr,
         function(err, result) {
             if(err) {
