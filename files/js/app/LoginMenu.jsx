@@ -38,9 +38,9 @@ class LoginMenu extends React.Component{
             dataType: 'JSON',
             timeout: (6 * 1000),
             success: function(resultData){
-                me.setState({list : resultData});
+                me.setState({list : resultData.data});
                 console.log('sqlStr:' + resultData.str);
-                console.log('list:' + me.state.list);
+                console.log('list:' +resultData.list);
             },
             error : function(err) {
                 console.log('err');
