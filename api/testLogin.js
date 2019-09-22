@@ -40,7 +40,7 @@ client.connect(function(err) {
             if(err) {
                 q_result.data  = [];
             } else {
-                q_result.data = result;
+                q_result.data = result.rows;
             }
             client.end();
             setTimeout(
