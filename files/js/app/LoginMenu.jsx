@@ -40,7 +40,7 @@ class LoginMenu extends React.Component{
             success: function(resultData){
                 me.setState({list : resultData.data});
                 console.log('sqlStr:' + resultData.str);
-                console.log('list:' +resultData.list);
+                console.log('list:' +resultData.data);
             },
             error : function(err) {
                 console.log('err');
