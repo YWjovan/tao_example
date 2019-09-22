@@ -21,7 +21,7 @@ client.connect(function(err) {
     }
     // console.log('connect successfully!');
     // let str = 'SELECT datname FROM pg_database WHERE datistemplate = false;';
-    let sqlStr = 'SELECT * FROM eliteuser_basic where email=' + user + ';';
+    let sqlStr = "SELECT * FROM eliteuser_basic where email='" + user + "';";
     // client.query(str, function(err, res) {
     //     console.log(err);
     //     // if(err) {
