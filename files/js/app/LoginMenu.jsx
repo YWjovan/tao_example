@@ -25,26 +25,6 @@ class LoginMenu extends React.Component{
         //     .then(data => {
         //         console.log(data);
         //     })
-    }
-
-    onClick(event) {
-        var me = this;
-        var url = 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + me.state.user;
-        console.log(url);
-        ReactDOM.TAO.dataEngine({
-            type: 'POST',
-            url: url,
-            data: {},
-            dataType: 'JSON',
-            timeout: (6 * 1000),
-            success: function(resultData){
-                me.setState({list : resultData.data});
-            },
-            error : function(err) {
-                console.log('err');
-            },
-            spinner : me
-        });
         if(me.state.list.length === 1){
             console.log('passwordHash is ' + this.state.list[0].passwordHash);
             if(isMatch(this.state.password, this.state.list[0].passwordHash)){
@@ -58,6 +38,27 @@ class LoginMenu extends React.Component{
             }
             console.log('cookie of token is ' + window.reactCookie.load('token'));
         }
+    }
+
+    onClick(event) {
+        var me = this;
+        var url = 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + me.state.user;
+        console.log(url);
+        ReactDOM.TAO.dataEngine({
+            type: 'POST',
+            url: url,
+            data: {},
+            dataType: 'JSON',
+            timeout: (6 * 1000),
+            success: function(resultData){
+                //console.log(resultData.)
+                me.setState({list : resultData.data});
+            },
+            error : function(err) {
+                console.log('err');
+            },
+            spinner : me
+        });
     }
 
     onUserTextChange(event) {
