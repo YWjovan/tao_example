@@ -25,19 +25,23 @@ class LoginMenu extends React.Component{
         //     .then(data => {
         //         console.log(data);
         //     })
-        if(me.state.list.length === 1){
-            console.log('passwordHash is ' + this.state.list[0].passwordHash);
-            if(isMatch(this.state.password, this.state.list[0].passwordHash)){
-                var token = '123456';
-                me.setState({token: token});
-                window.reactCookie.save('token', me.state.token, {path: '/'});
-            }else {
-                var token = '654321';
-                me.setState({token: token});
-                window.reactCookie.save('token', me.state.token, {path: '/'});
-            }
-            console.log('cookie of token is ' + window.reactCookie.load('token'));
-        }
+        // if(me.state.list.length === 1){
+        //     console.log('passwordHash is ' + this.state.list[0].passwordHash);
+        //     if(this.isMatch(this.state.password, this.state.list[0].passwordHash)){
+        //         var token = '123456';
+        //         me.setState({token: token});
+        //         window.reactCookie.save('token', me.state.token, {path: '/'});
+        //     }else {
+        //         var token = '654321';
+        //         me.setState({token: token});
+        //         window.reactCookie.save('token', me.state.token, {path: '/'});
+        //     }
+        //     console.log('cookie of token is ' + window.reactCookie.load('token'));
+        // }
+    }
+
+    isMatch(password, passwordHash) {
+        return true;
     }
 
     componentDidUpdate() {
