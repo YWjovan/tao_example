@@ -38,9 +38,7 @@ class LoginMenu extends React.Component{
             dataType: 'JSON',
             timeout: (6 * 1000),
             success: function(resultData){
-                console.log('result: ' + resultData.data[0].passWordHash);
                 me.setState({list : resultData.data});
-                console.log('sqlStr: ' + resultData.str);
             },
             error : function(err) {
                 console.log('err');
@@ -48,8 +46,10 @@ class LoginMenu extends React.Component{
             spinner : me
         });
         if(me.state.list.length == 1){
-            me.setState({token: 'token'});
-            window.reactCookie.save('token', me.state.token);
+            if(isMatch(this.state.password, this.state.list[0].passwordHash)){
+                me.setState({token: 'token'});
+                window.reactCookie.save('token', me.state.token);
+            }
         }
     }
 
