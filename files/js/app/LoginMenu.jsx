@@ -25,19 +25,7 @@ class LoginMenu extends React.Component{
         //     .then(data => {
         //         console.log(data);
         //     })
-        // if(me.state.list.length === 1){
-        //     console.log('passwordHash is ' + this.state.list[0].passwordHash);
-        //     if(this.isMatch(this.state.password, this.state.list[0].passwordHash)){
-        //         var token = '123456';
-        //         me.setState({token: token});
-        //         window.reactCookie.save('token', me.state.token, {path: '/'});
-        //     }else {
-        //         var token = '654321';
-        //         me.setState({token: token});
-        //         window.reactCookie.save('token', me.state.token, {path: '/'});
-        //     }
-        //     console.log('cookie of token is ' + window.reactCookie.load('token'));
-        // }
+
     }
 
     isMatch(password, passwordHash) {
@@ -70,8 +58,27 @@ class LoginMenu extends React.Component{
             dataType: 'JSON',
             timeout: (6 * 1000),
             success: function(resultData){
-                //console.log(resultData.)
-                me.setState({list : resultData.data});
+                var list = resultData.data;
+                var passwordHash = '';
+                if(list.length === 1) {
+                    passwordHash = list[0].passWordHash;
+                    if(this.isMatch(this.state.password, passwordHash)) {
+                        var token = '123456';
+                        me.setState({token: token}, () => {
+                            console.log(this.state.token);
+                        });
+                        window.reactCookie.save('token', me.state.token, {path: '/'});
+                    }else {
+                        var token = '654321';
+                        me.setState({token: token}, () => {
+                            console.log(this.state.token);
+                        });
+                        window.reactCookie.save('token', me.state.token, {path: '/'});
+                    }
+                }
+                // me.setState({list : resultData.data}, () => {
+                //
+                // });
             },
             error : function(err) {
                 console.log('err: ' + err.message);
@@ -79,20 +86,20 @@ class LoginMenu extends React.Component{
             spinner : me
         });
 
-            if(me.state.list.length === 1){
-                console.log(this.state.list);
-                console.log('passwordHash is ' + this.state.list[0].passWordHash);
-                if(this.isMatch(this.state.password, this.state.list[0].passWordHash)){
-                    var token = '123456';
-                    me.setState({token: token});
-                    window.reactCookie.save('token', me.state.token, {path: '/'});
-                }else {
-                    var token = '654321';
-                    me.setState({token: token});
-                    window.reactCookie.save('token', me.state.token, {path: '/'});
-                }
-                console.log('cookie of token is ' + window.reactCookie.load('token'));
-            }
+            // if(me.state.list.length === 1){
+            //     console.log(this.state.list);
+            //     console.log('passwordHash is ' + this.state.list[0].passWordHash);
+            //     if(this.isMatch(this.state.password, this.state.list[0].passWordHash)){
+            //         var token = '123456';
+            //         me.setState({token: token});
+            //         window.reactCookie.save('token', me.state.token, {path: '/'});
+            //     }else {
+            //         var token = '654321';
+            //         me.setState({token: token});
+            //         window.reactCookie.save('token', me.state.token, {path: '/'});
+            //     }
+            //     console.log('cookie of token is ' + window.reactCookie.load('token'));
+            // }
     }
 
     onUserTextChange(event) {
