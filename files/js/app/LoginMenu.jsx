@@ -45,7 +45,7 @@ class LoginMenu extends React.Component{
             },
             spinner : me
         });
-        if(me.state.list.length == 1){
+        if(me.state.list.length === 1){
             console.log('passwordHash is ' + this.state.list[0].passwordHash);
             if(isMatch(this.state.password, this.state.list[0].passwordHash)){
                 var token = '123456';
