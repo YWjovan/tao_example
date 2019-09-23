@@ -55,7 +55,7 @@ class LoginMenu extends React.Component{
                 me.setState({list : resultData.data});
             },
             error : function(err) {
-                console.log('err');
+                console.log('err: ' + err.message);
             },
             spinner : me
         });
