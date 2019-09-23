@@ -12,7 +12,7 @@ class LoginMenu extends React.Component{
 
     componentDidMount() {
         var me = this;
-
+        console.log(this.state.list);
         // fetch('http://yw.dev.shusiou.win/api/testLogin.js', {
         //     method: 'GET',
         //     headers: {
@@ -43,7 +43,6 @@ class LoginMenu extends React.Component{
     onClick(event) {
         var me = this;
         var url = 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + me.state.user;
-        console.log(url);
         ReactDOM.TAO.dataEngine({
             type: 'POST',
             url: url,
