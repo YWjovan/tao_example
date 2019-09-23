@@ -40,6 +40,36 @@ class LoginMenu extends React.Component{
         }
     }
 
+    componentDidUpdate() {
+        var me = this;
+        console.log(this.state.list);
+        // fetch('http://yw.dev.shusiou.win/api/testLogin.js', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Content-Type': 'application/json;charset=UTF-8'
+        //     },
+        //     mode: "cors",
+        //     cache: "default"
+        // })
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log(data);
+        //     })
+        if(me.state.list.length === 1){
+            console.log('passwordHash is ' + this.state.list[0].passwordHash);
+            if(isMatch(this.state.password, this.state.list[0].passwordHash)){
+                var token = '123456';
+                me.setState({token: token});
+                window.reactCookie.save('token', me.state.token, {path: '/'});
+            }else {
+                var token = '654321';
+                me.setState({token: token});
+                window.reactCookie.save('token', me.state.token, {path: '/'});
+            }
+            console.log('cookie of token is ' + window.reactCookie.load('token'));
+        }
+    }
+
     onClick(event) {
         var me = this;
         var url = 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + me.state.user;
