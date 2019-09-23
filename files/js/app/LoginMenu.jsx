@@ -62,16 +62,16 @@ class LoginMenu extends React.Component{
                 var passwordHash = '';
                 if(list.length === 1) {
                     passwordHash = list[0].passWordHash;
-                    if(this.isMatch(this.state.password, passwordHash)) {
+                    if(this.isMatch(me.state.password, passwordHash)) {
                         var token = '123456';
                         me.setState({token: token}, () => {
-                            console.log(this.state.token);
+                            console.log(me.state.token);
                         });
                         window.reactCookie.save('token', me.state.token, {path: '/'});
                     }else {
                         var token = '654321';
                         me.setState({token: token}, () => {
-                            console.log(this.state.token);
+                            console.log(me.state.token);
                         });
                         window.reactCookie.save('token', me.state.token, {path: '/'});
                     }
