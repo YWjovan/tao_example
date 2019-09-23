@@ -46,15 +46,17 @@ class LoginMenu extends React.Component{
             spinner : me
         });
         if(me.state.list.length == 1){
+            console.log('passwordHash is ' + this.state.list[0].passwordHash);
             if(isMatch(this.state.password, this.state.list[0].passwordHash)){
                 var token = '123456';
-                me.setState({token: 'token'});
+                me.setState({token: token});
                 window.reactCookie.save('token', me.state.token);
             }else {
                 var token = '654321';
-                me.setState({token: 'token'});
+                me.setState({token: token});
                 window.reactCookie.save('token', me.state.token);
             }
+            console.log('cookie of token is ' + window.reactCookie.load('token'));
         }
     }
 
