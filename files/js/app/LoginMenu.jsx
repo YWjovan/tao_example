@@ -12,7 +12,7 @@ class LoginMenu extends React.Component{
 
     componentDidMount() {
         var me = this;
-        console.log(this.state.list);
+        //console.log(this.state.list);
         // fetch('http://yw.dev.shusiou.win/api/testLogin.js', {
         //     method: 'GET',
         //     headers: {
@@ -46,7 +46,6 @@ class LoginMenu extends React.Component{
 
     componentDidUpdate() {
         var me = this;
-        console.log(this.state.list);
         // fetch('http://yw.dev.shusiou.win/api/testLogin.js', {
         //     method: 'GET',
         //     headers: {
@@ -60,6 +59,7 @@ class LoginMenu extends React.Component{
         //         console.log(data);
         //     })
         if(me.state.list.length === 1){
+            console.log(this.state.list);
             console.log('passwordHash is ' + this.state.list[0].passWordHash);
             if(isMatch(this.state.password, this.state.list[0].passWordHash)){
                 var token = '123456';
