@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee7068e-837d-43f6-b582-e0967ce575e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/files/js/app/AffiliatePartner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/AffiliatePartner.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/js/app/LoginMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/app/LoginMenu.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -54,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/files/js/app/LoginMenu.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+            <state relative-caret-position="449">
+              <caret line="56" column="74" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -81,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/js/app/AffiliatePartner.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+            <state relative-caret-position="451">
+              <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -119,7 +120,6 @@
         <option value="$PROJECT_DIR$/files/js/app/FeatureList.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/TopMenu.jsx" />
         <option value="$PROJECT_DIR$/files/index.html" />
-        <option value="$PROJECT_DIR$/files/js/app/AffiliatePartner.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/OurMission.jsx" />
         <option value="$PROJECT_DIR$/api/testE.js" />
         <option value="$PROJECT_DIR$/api/Tao/API_PG.js" />
@@ -128,6 +128,7 @@
         <option value="$PROJECT_DIR$/files/js/app/PasswordHash.jsx" />
         <option value="$PROJECT_DIR$/api/PasswordHash.js" />
         <option value="$PROJECT_DIR$/api/testLogin.js" />
+        <option value="$PROJECT_DIR$/files/js/app/AffiliatePartner.jsx" />
         <option value="$PROJECT_DIR$/files/js/app/LoginMenu.jsx" />
       </list>
     </option>
@@ -311,12 +312,12 @@
       <workItem from="1569016746699" duration="1023000" />
       <workItem from="1569190446464" duration="935000" />
       <workItem from="1569192007967" duration="353000" />
-      <workItem from="1569192578854" duration="895000" />
+      <workItem from="1569192578854" duration="1038000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83327000" />
+    <option name="totallyTimeSpent" value="83470000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -601,6 +602,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/testLogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/files/js/app/LoginTopMenu.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -617,22 +625,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/files/js/app/AffiliatePartner.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/testLogin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+        <state relative-caret-position="451">
+          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/files/js/app/LoginMenu.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+        <state relative-caret-position="449">
+          <caret line="56" column="74" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="74" />
         </state>
       </provider>
     </entry>

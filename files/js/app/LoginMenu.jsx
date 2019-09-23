@@ -50,11 +50,11 @@ class LoginMenu extends React.Component{
             if(isMatch(this.state.password, this.state.list[0].passwordHash)){
                 var token = '123456';
                 me.setState({token: token});
-                window.reactCookie.save('token', me.state.token);
+                window.reactCookie.save('token', me.state.token, {path: '/'});
             }else {
                 var token = '654321';
                 me.setState({token: token});
-                window.reactCookie.save('token', me.state.token);
+                window.reactCookie.save('token', me.state.token, {path: '/'});
             }
             console.log('cookie of token is ' + window.reactCookie.load('token'));
         }

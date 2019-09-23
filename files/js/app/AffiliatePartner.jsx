@@ -23,7 +23,7 @@ class AffiliatePartner extends React.Component{
         window.reactCookie.save('token', 'hello cookie', {path: '/'});
         var xhr = new XMLHttpRequest();
         xhr.withCredentials = true;
-        console.log('token get:' + window.reactCookie.load('token'));
+        //console.log('token get:' + window.reactCookie.load('token'));
     }
 
     componentDidMount() {
