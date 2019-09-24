@@ -60,7 +60,7 @@ class LoginMenu extends React.Component{
             timeout: (6 * 1000),
             success: function(resultData){
                 var list = resultData.data;
-                console.log(list[0]);
+                // console.log(list[0]);
                 // if(list.length === 1) {
                 //     passwordHash = list[0].passWordHash;
                 //     if(this.isMatch(me.state.password, passwordHash)) {
