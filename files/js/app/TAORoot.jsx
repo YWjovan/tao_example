@@ -22,6 +22,7 @@ class TAORoot extends React.Component {
 			url: cfg.url,
 			data: (cfg.data) ? cfg.data : {},
 			dataType: (cfg.dataType) ? cfg.dataType : 'JSON',
+			contentType: (cfg.contentType) ? cfg.contentType : '',
 			timeout: (cfg.timeout) ? cfg.timeout : 8000,
 			success: function(resultData){
 				if (cfg.spinner !== false) me.spinOff(code);
