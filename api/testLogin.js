@@ -1,5 +1,5 @@
-var user = TAO.req.query.user;
-var pass = TAO.req.query.pass;
+var user = TAO.req.body.user;
+var pass = TAO.req.body.pass;
 
 delete TAO.require.cache[TAO.env.root_path + '/vendor/pg/node_modules/pg'];
 var pg = TAO.require(TAO.env.root_path + '/vendor/pg/node_modules/pg');

@@ -28,9 +28,9 @@ class LoginMenu extends React.Component{
 
     }
 
-    isMatch(password, passwordHash) {
-        return true;
-    }
+    // isMatch(password, passwordHash) {
+    //     return true;
+    // }
 
     componentDidUpdate() {
         var me = this;
@@ -50,32 +50,33 @@ class LoginMenu extends React.Component{
 
     onClick(event) {
         var me = this;
-        var url = 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + me.state.user;
+        var url = 'http://yw.dev.shusiou.win/api/testLogin.api';
+        // var url = 'http://yw.dev.shusiou.win/api/testLogin.api?user=' + me.state.user;
         ReactDOM.TAO.dataEngine({
             type: 'POST',
             url: url,
-            data: {},
+            data: {user: me.state.user, pass: me.state.password},
             dataType: 'JSON',
             timeout: (6 * 1000),
             success: function(resultData){
                 var list = resultData.data;
-                var passwordHash = '';
-                if(list.length === 1) {
-                    passwordHash = list[0].passWordHash;
-                    if(this.isMatch(me.state.password, passwordHash)) {
-                        var token = '123456';
-                        me.setState({token: token}, () => {
-                            console.log(me.state.token);
-                        });
-                        window.reactCookie.save('token', me.state.token, {path: '/'});
-                    }else {
-                        var token = '654321';
-                        me.setState({token: token}, () => {
-                            console.log(me.state.token);
-                        });
-                        window.reactCookie.save('token', me.state.token, {path: '/'});
-                    }
-                }
+                console.log(list[0]);
+                // if(list.length === 1) {
+                //     passwordHash = list[0].passWordHash;
+                //     if(this.isMatch(me.state.password, passwordHash)) {
+                //         var token = '123456';
+                //         me.setState({token: token}, () => {
+                //             console.log(me.state.token);
+                //         });
+                //         window.reactCookie.save('token', me.state.token, {path: '/'});
+                //     }else {
+                //         var token = '654321';
+                //         me.setState({token: token}, () => {
+                //             console.log(me.state.token);
+                //         });
+                //         window.reactCookie.save('token', me.state.token, {path: '/'});
+                //     }
+                // }
                 // me.setState({list : resultData.data}, () => {
                 //
                 // });
