@@ -11,6 +11,7 @@ var setting =  TAO.require(TAO.env.config_path + '/dbSetting.json');
 
 setting.prod.PG.connectionTimeoutMillis = 6000;
 var client = new pg.Client(setting.prod.PG);
+var q_data = {};
 var q_result = {};
 client.connect(function(err) {
     if(err) {
@@ -22,24 +23,28 @@ client.connect(function(err) {
     client.query(sqlStr,
         function(err, result) {
             if(err) {
-                q_result.data  = ["error", err.message];
+                q_data.data  = ["error", err.message];
             } else {
-                q_result.data = result.rows;
+                q_data.data = result.rows;
             }
             client.end();
-            // setTimeout(
-            //     function() {
-            //         TAO.res.send(q_result);
-            //     }, Math.floor(Math.random() * 3 + 3) * 500
-            // );
+            setTimeout(
+                function() {
+                    q_result.token = "";
+                    if(passwordHash.verify(pass, q_data.data[0].passWordHash)) {
+                        q_result.token = '123456789';
+                    }
+                    TAO.res.send();
+                }, Math.floor(Math.random() * 3 + 3) * 500
+            );
         });
 });
-var token = "";
-if(passwordHash.verify(pass, q_result.data[0].passWordHash)) {
-   token = '123456789';
-}
-setTimeout(
-    function() {
-        TAO.res.send(token);
-    }, Math.floor(Math.random() * 3 + 3) * 500
-)
+// var token = "";
+// if(passwordHash.verify(pass, q_result.data[0].passWordHash)) {
+//    token = '123456789';
+// }
+// setTimeout(
+//     function() {
+//         TAO.res.send(token);
+//     }, Math.floor(Math.random() * 3 + 3) * 500
+// );
