@@ -30,11 +30,12 @@ client.connect(function(err) {
             client.end();
             setTimeout(
                 function() {
-                    q_result.token = "";
-                    if(passwordHash.verify(pass, q_data.data[0].passWordHash)) {
-                        q_result.token = '123456789';
-                    }
-                    TAO.res.send(q_result);
+                    // q_result.token = "";
+                    // if(passwordHash.verify(pass, q_data.data[0].passWordHash)) {
+                    //     q_result.token = '123456789';
+                    // }
+                    TAO.res.send(q_data);
+                    // TAO.res.send(q_result);
                 }, Math.floor(Math.random() * 3 + 3) * 500
             );
         });
