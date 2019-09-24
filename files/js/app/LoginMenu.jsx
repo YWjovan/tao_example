@@ -56,7 +56,7 @@ class LoginMenu extends React.Component{
             url: url,
             data: {user: me.state.user, pass: me.state.password},
             dataType: 'JSON',
-            contentType: 'application/x-www-form-urlencoded',
+            // contentType: 'application/x-www-form-urlencoded',
             timeout: (6 * 1000),
             success: function(resultData){
                 console.log(resultData);
