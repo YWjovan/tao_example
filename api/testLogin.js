@@ -1,5 +1,6 @@
 var user = TAO.req.body.user;
 var pass = TAO.req.body.pass;
+var passwordHash = require('PasswordHash');
 
 delete TAO.require.cache[TAO.env.root_path + '/vendor/pg/node_modules/pg'];
 var pg = TAO.require(TAO.env.root_path + '/vendor/pg/node_modules/pg');
@@ -9,31 +10,14 @@ var setting =  TAO.require(TAO.env.config_path + '/dbSetting.json');
 
 
 setting.prod.PG.connectionTimeoutMillis = 6000;
-// var client = new pg.Client(connStr);
 var client = new pg.Client(setting.prod.PG);
 var q_result = {};
 client.connect(function(err) {
     if(err) {
         TAO.res.send(err.message);
-        // console.log('error message is ' + err.message);
-        // client.end();
         return true;
     }
-    // console.log('connect successfully!');
-    // let str = 'SELECT datname FROM pg_database WHERE datistemplate = false;';
     let sqlStr = "SELECT * FROM eliteuser_basic where email='" + user + "';";
-    // client.query(str, function(err, res) {
-    //     console.log(err);
-    //     // if(err) {
-    //     //     console.log('error message is ' + err.message);
-    //     // }else {
-    //     //     console.log(res);
-    //     // }
-    //     // //TAO.res.send(res);
-    //     // cilent.end();
-    // });
-
-    // var q_result = {};
     q_result.str = sqlStr;
     client.query(sqlStr,
         function(err, result) {
@@ -43,11 +27,19 @@ client.connect(function(err) {
                 q_result.data = result.rows;
             }
             client.end();
-            setTimeout(
-                function() {
-                    TAO.res.send(q_result);
-                }, Math.floor(Math.random() * 3 + 3) * 500
-            );
+            // setTimeout(
+            //     function() {
+            //         TAO.res.send(q_result);
+            //     }, Math.floor(Math.random() * 3 + 3) * 500
+            // );
         });
 });
-
+var token = "";
+if(passwordHash.verify(pass, q_result.data[0].passWordHash)) {
+   token = '123456789';
+}
+setTimeout(
+    function() {
+        TAO.res.send(token);
+    }, Math.floor(Math.random() * 3 + 3) * 500
+)

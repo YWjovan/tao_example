@@ -3,7 +3,6 @@ class LoginMenu extends React.Component{
         super(props);
         // cookie.save('token', '123', {path: '/'});
         this.state = {
-            list: [],
             user: "",
             password: "",
             token: ""
@@ -59,7 +58,7 @@ class LoginMenu extends React.Component{
             dataType: 'JSON',
             timeout: (6 * 1000),
             success: function(resultData){
-                var list = resultData.data;
+                console.log(resultData);
                 // console.log(list[0]);
                 // if(list.length === 1) {
                 //     passwordHash = list[0].passWordHash;
