@@ -1,6 +1,6 @@
 var user = TAO.req.body.user;
 var pass = TAO.req.body.pass;
-// var passwordHash = require('PasswordHash');
+var passwordHash = TAO.require(TAO.env.root_path + '/vendor');
 
 delete TAO.require.cache[TAO.env.root_path + '/vendor/pg/node_modules/pg'];
 var pg = TAO.require(TAO.env.root_path + '/vendor/pg/node_modules/pg');
@@ -34,7 +34,8 @@ client.connect(function(err) {
                     // if(passwordHash.verify(pass, q_data.data[0].passWordHash)) {
                     //     q_result.token = '123456789';
                     // }
-                    TAO.res.send(q_data);
+                    TAO.res.send(passwordHash);
+                    // TAO.res.send(q_data);
                     // TAO.res.send(q_result);
                 }, Math.floor(Math.random() * 3 + 3) * 500
             );
