@@ -1,13 +1,12 @@
 var user = TAO.req.body.user;
 var pass = TAO.req.body.pass;
-var passwordHash = TAO.require(TAO.env.root_path + '/vendor/password-hash/node_modules/password-hash');
+var passwordHash = require('./Modules/password-hash/lib/password-hash');
 
 delete TAO.require.cache[TAO.env.root_path + '/vendor/pg/node_modules/pg'];
 var pg = TAO.require(TAO.env.root_path + '/vendor/pg/node_modules/pg');
 
 delete TAO.require.cache[TAO.env.config_path + '/dbSetting.json'];
 var setting =  TAO.require(TAO.env.config_path + '/dbSetting.json');
-
 
 setting.prod.PG.connectionTimeoutMillis = 6000;
 var client = new pg.Client(setting.prod.PG);
@@ -40,12 +39,3 @@ client.connect(function(err) {
             );
         });
 });
-// var token = "";
-// if(passwordHash.verify(pass, q_result.data[0].passWordHash)) {
-//    token = '123456789';
-// }
-// setTimeout(
-//     function() {
-//         TAO.res.send(token);
-//     }, Math.floor(Math.random() * 3 + 3) * 500
-// );
