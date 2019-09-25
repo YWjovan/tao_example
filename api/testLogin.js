@@ -1,6 +1,6 @@
 var user = TAO.req.body.user;
 var pass = TAO.req.body.pass;
-var passwordHash = TAO.require(TAO.env.root_path + '/vendor/password-hash');
+var passwordHash = TAO.require(TAO.env.root_path + '/vendor/password-hash/node_modules/password-hash');
 
 delete TAO.require.cache[TAO.env.root_path + '/vendor/pg/node_modules/pg'];
 var pg = TAO.require(TAO.env.root_path + '/vendor/pg/node_modules/pg');
