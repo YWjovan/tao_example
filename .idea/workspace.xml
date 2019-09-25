@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ee7068e-837d-43f6-b582-e0967ce575e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api/testLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/testLogin.js" afterDir="false" />
-    </list>
+    <list default="true" id="0ee7068e-837d-43f6-b582-e0967ce575e0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -27,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/testLogin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+            <state relative-caret-position="30">
+              <caret line="2" column="102" selection-start-line="2" selection-start-column="102" selection-end-line="2" selection-end-column="102" />
             </state>
           </provider>
         </entry>
@@ -161,6 +159,13 @@
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tao_example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tao_example" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="password-hash" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -174,6 +179,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/api/Modules" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -317,12 +323,12 @@
       <workItem from="1569370630219" duration="576000" />
       <workItem from="1569375599238" duration="719000" />
       <workItem from="1569389177648" duration="377000" />
-      <workItem from="1569389638262" duration="388000" />
+      <workItem from="1569389638262" duration="653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92518000" />
+    <option name="totallyTimeSpent" value="92783000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -635,10 +641,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/Modules/password-hash/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/testLogin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="30">
+          <caret line="2" column="102" selection-start-line="2" selection-start-column="102" selection-end-line="2" selection-end-column="102" />
         </state>
       </provider>
     </entry>
