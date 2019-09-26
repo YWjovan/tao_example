@@ -31,7 +31,7 @@ class LoginMenu extends React.Component{
             success: function(resultData){
                 //console.log(resultData.token);
                 var tk = resultData.token;
-                this.setState({token: tk});
+                me.setState({token: tk});
                 window.reactCookie.save('token', tk, {path: '/'});
                 // console.log(list[0]);
                 // if(list.length === 1) {
