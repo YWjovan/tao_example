@@ -1,6 +1,6 @@
 var user = TAO.req.body.user;
 var pass = TAO.req.body.pass;
-var passwordHash = TAO.require('http://yw.dev.shusiou.win/api/Modules/password-hash/lib/password-hash.js');
+// var passwordHash = TAO.require('http://yw.dev.shusiou.win/api/Modules/password-hash/lib/password-hash.js');
 
 delete TAO.require.cache[TAO.env.root_path + '/vendor/pg/node_modules/pg'];
 var pg = TAO.require(TAO.env.root_path + '/vendor/pg/node_modules/pg');
@@ -29,11 +29,17 @@ client.connect(function(err) {
             client.end();
             setTimeout(
                 function() {
-                    q_result.token = "";
-                    if(passwordHash.verify(pass, q_data.data[0].passWordHash)) {
-                        q_result.token = '123456789';
+                    // if(passwordHash.verify(pass, q_data.data[0].passWordHash)) {
+                    //     q_result.token = '123456789';
+                    // }
+                    if(pass === '1234') {
+                        q_result.token = "";
+                        TAO.res.send(q_result)
+                    }else {
+                        q_result.token = "123456789";
+                        TAO.res.send(q_result);
                     }
-                    TAO.res.send(q_data);
+                    // TAO.res.send(q_data);
                     // TAO.res.send(q_result);
                 }, Math.floor(Math.random() * 3 + 3) * 500
             );
