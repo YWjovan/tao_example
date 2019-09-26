@@ -18,7 +18,7 @@ client.connect(function(err) {
         return true;
     }
     let sqlStr = "SELECT * FROM eliteuser_basic where email='" + user + "';";
-    q_result.str = sqlStr;
+    // q_result.str = sqlStr;
     client.query(sqlStr,
         function(err, result) {
             if(err) {
