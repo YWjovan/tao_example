@@ -29,7 +29,7 @@ class LoginMenu extends React.Component{
             // contentType: 'application/x-www-form-urlencoded',
             timeout: (6 * 1000),
             success: function(resultData){
-                console.log(resultData);
+                console.log(resultData.token);
                 // console.log(list[0]);
                 // if(list.length === 1) {
                 //     passwordHash = list[0].passWordHash;
