@@ -37,7 +37,8 @@ client.connect(function(err) {
                         TAO.res.send(q_result)
                     }else {
                         q_result.token = "123456789";
-                        TAO.res.send(q_result);
+                        TAO.res.redirect('http://localhost:5000/yw?token=' + q_result.token);
+                        // TAO.res.send(q_result);
                     }
                     // TAO.res.send(q_data);
                     // TAO.res.send(q_result);
