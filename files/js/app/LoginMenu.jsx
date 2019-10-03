@@ -33,7 +33,7 @@ class LoginMenu extends React.Component{
                 var tk = resultData.token;
                 me.setState({token: tk});
                 window.reactCookie.save('token', tk, {path: '/'});
-                
+
                 // console.log(list[0]);
                 // if(list.length === 1) {
                 //     passwordHash = list[0].passWordHash;
@@ -56,7 +56,7 @@ class LoginMenu extends React.Component{
                 // });
             },
             error : function(err) {
-                console.log('err: ' + err.message);
+                console.log(err.message);
             },
             spinner : me
         });
